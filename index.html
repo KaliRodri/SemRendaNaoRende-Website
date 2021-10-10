@@ -5,53 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" sizes="40x40" href="/imagens/logo2.svg">
+    
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="/Bootstrap5/css/bootstrap.min.css">
+     
     <title>Sem Renda Não Rende</title>
 </head>
 <body>
     <header>
         <ul class="menu1">
-            <li>Quem Somos</li>
-            <li>Produtos</li>
+            <li><a href="">Quem Somos</a></li>
+        </ul>    
+        <ul class="menu1">
+            <li><a href="">Produtos</a></li>
         </ul>
         
         <div class="logo">
-            <a href="index.html"><img src="/Pastateste1/imagens/logo2.svg" alt="" width="120px" height="85px"></a>
+            <a href="index.html"><img src="/imagens/logo2.svg" alt="" width="120px" height="60px"></a>
         </div>
 
         <ul class="menu2">
-            <li>Lorem</li>
-            <li>Lorem</li>
+            <li><a href="">Entre em Contato</a></li>
+        </ul>    
+        <ul class="menu2">
+            <li><a href="" class="heartlink" onclick="likeAlert()">Deixe um like<img src="/imagens/heart.svg" width="20px" height="18px" class="heart-icon" id="heart"><img src="/imagens/heartred.svg" width="22px" height="20px" class="heart-icon" id="heart2"></a></li>
+            
         </ul>
     </header>
    
     <div class="container">
+      <div class="container2">
         <main>
-            <p class="welcome">Bem Vindo ao Sem Renda Não Rende</p>
+            <p class="welcome">Sem Renda Não Rende<img src="/imagens/Lotus.svg" alt="" width="100px" height="100px" class="lotus"></p>
             <!--Linha Divisória-->
-            <img src="/Pastateste1/imagens/Rectangle 21.png" alt="">
+            <img src="/imagens/Rectangle 21.png" alt="" class="line">
+
             <p class="welcome-Text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid temporibus quia atque beatae? Quo, accusamus laudantium pariatur, quis praesentium fuga et nemo dolorem deserunt in incidunt nam. Distinctio, debitis officia.</p>
+            <a href="">Ver mais</a>
         </main>
 
+      </div>
+
         <aside>
-            <p class="title">Conheça Nossos Serviços</p>
+            <p class="title">Conheça nossas principais características</p>
           <div class="contents">
            <div class="content1">
-            <img src="" alt="">
-            <p>Feitas para Você</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse assumenda nostrum totam adipisci, excepturi cumque magnam at ex exercitationem numquam, quae, dicta labore accusamus necessitatibus amet praesentium soluta fuga fugit?</p>
+            <img src="/imagens/delivery2.svg" alt="" width="210px" height="179px" id="delivery1"><img src="/imagens/Group 53.svg" alt="" width="210px" height="179px" id="delivery2">
+            <div class="title1">Entrega Rápida</div>
+            <p class="title1-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse assumenda nostrum totam adipisci, excepturi cumque magnam at ex exercitationem numquam, quae, dicta labore accusamus necessitatibus amet praesentium soluta fuga fugit?</p>
            </div> 
 
            <div class="content2">
-            <img src="" alt="">
-            <p>Entrega Rápida</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse assumenda nostrum totam adipisci, excepturi cumque magnam at ex exercitationem numquam, quae, dicta labore accusamus necessitatibus amet praesentium soluta fuga fugit?</p>
+            <img src="/imagens/blink.svg" alt="" width="165px" height="180px" id="blink1"><img src="/imagens/blinkno.svg" alt="" width="185px" height="180px" id="blink2">
+            <div class="title2">Feitas para Você</div>
+            <p class="title2-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse assumenda nostrum totam adipisci, excepturi cumque magnam at ex exercitationem numquam, quae, dicta labore accusamus necessitatibus amet praesentium soluta fuga fugit?</p>
            </div> 
 
            <div class="content3">
-            <img src="" alt="">
-            <p>Melhor Qualidade</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse assumenda nostrum totam adipisci, excepturi cumque magnam at ex exercitationem numquam, quae, dicta labore accusamus necessitatibus amet praesentium soluta fuga fugit?</p>
-           </div> 
+            <img src="/imagens/icon-park_diamond-necklace.svg" alt="" width="210px" height="180px" id="neck1"><img src="/imagens/necklace.svg" alt="" width="180px" height="180px" id="neck2">
+            <div class="title3">Melhor Qualidade</div>
+            <p class="title3-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse assumenda nostrum totam adipisci, excepturi cumque magnam at ex exercitationem numquam, quae, dicta labore accusamus necessitatibus amet praesentium soluta fuga fugit?</p> 
+          </div> 
          </div> 
            
         </aside>
@@ -59,24 +75,36 @@
     
     
     <footer>
-      <!--Ícones-->
-      <div class="icons">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-      </div>
-
-        <!--Linha Divisória-->
-        <img src="" alt="">
-
         <!--logo-->
        <div class="footerlogo">
-        <img src="" alt="">
+        <!--Icons-->
+        <div class="allicons">
+         <img src="/imagens/Facebook.svg" class="icon" id="icon1">
+         <img src="/imagens/Instagram.svg" class="icon" id="icon2">
+         <img src="/imagens/whatsapp.svg" class="icon" id="icon3">
+         <img src="/imagens/logos_google-maps.svg" class="icon" id="icon4">
+        </div>
+        
+        <!--Linha Divisória-->
+        <img src="/imagens/Rectangle 21.png" alt="" class="logofooter" width="380px">
+        <img src="/imagens/logo2.svg" alt="" width="80px" height="80px">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore molestias velit recusandae? Delectus voluptatem, incidunt animi necessitatibus consequatur iusto voluptate possimus impedit iure a maiores minus, molestias nam veniam vero!</p>
         <p>@ 2021 SemRendaNaoRende. Todos os direitos reservados.</p>
        </div>  
     </footer>
+
+
+    <!--Font Linksheet-->
+    <script type="text/javascript" src="/script.js"></script>
+    <!--Font Linksheet-->
+    <script src="https://kit.fontawesome.com/1fada6fc3d.js" crossorigin="anonymous"></script>
+
+    <!--Bootstrap Js-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="/Bootstrap5/js/bootstrap.min.js"></script>
+    <script src="/Bootstrap5/js/bootstrap.bundle.js"></script>
+
 </body>
 </html>
