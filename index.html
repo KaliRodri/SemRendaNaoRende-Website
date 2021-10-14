@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg" sizes="40x40" href="/imagens/logo2.svg">
+    <link rel="stylesheet" href="/css/reponsive.css">
+    <link rel="stylesheet" href="/css/sstyle.css">
     
+    <link rel="icon" type="image/svg" sizes="40x40" href="/imagens/logo3.svg">
 
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="/Bootstrap5/css/bootstrap.min.css">
+    <!--Owl Linksheet-->
+    <link rel="stylesheet" href="/css/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/Owl/owl.theme.default.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/Bootstrap5/css/bootstrap.min.css">
      
     <title>Sem Renda Não Rende</title>
 </head>
 <body>
     <header>
+        <div class="dropdown text-start m-0 p-0"  id="menu-sm">
+            <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+             <img src="/imagens/Barra.svg" alt="" width="40px" height="44.5px"> 
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li><button class="dropdown-item" type="button"><a href="#">Quem Somos</a></button></li>
+              <li><button class="dropdown-item" type="button"><a href="#">Produtos</a></button></li>
+              <li><button class="dropdown-item" type="button"><a href="#"><a href="#">Entre em Contato</a></a></button></li>
+              <li><button class="dropdown-item" type="button"><a href="#"><a href="#"><a href="#">Lorem</a></a></a></button></li>
+            </ul>
+        </div> 
         <ul class="menu1">
             <li><a href="">Quem Somos</a></li>
         </ul>    
@@ -22,7 +38,7 @@
             <li><a href="">Produtos</a></li>
         </ul>
         
-        <div class="logo">
+        <div class="logo" >
             <a href="index.html"><img src="/imagens/logo2.svg" alt="" width="120px" height="60px"></a>
         </div>
 
@@ -30,75 +46,115 @@
             <li><a href="">Entre em Contato</a></li>
         </ul>    
         <ul class="menu2">
-            <li><a href="" class="heartlink" onclick="likeAlert()">Deixe um like<img src="/imagens/heart.svg" width="20px" height="18px" class="heart-icon" id="heart"><img src="/imagens/heartred.svg" width="22px" height="20px" class="heart-icon" id="heart2"></a></li>
-            
+            <li><button class="heartlink" id="heartlink2" onclick="likeAlert()">Deixe um like<img src="/imagens/heart.svg" width="20px" height="18px" class="heart-icon" id="heart"><img src="/imagens/heartred.svg" width="22px" height="20px" class="heart-icon" id="heart2"></button></li>
         </ul>
     </header>
-   
+   <section>
     <div class="container">
-      <div class="container2">
         <main>
             <p class="welcome">Sem Renda Não Rende<img src="/imagens/Lotus.svg" alt="" width="100px" height="100px" class="lotus"></p>
+            
             <!--Linha Divisória-->
             <img src="/imagens/Rectangle 21.png" alt="" class="line">
 
             <p class="welcome-Text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid temporibus quia atque beatae? Quo, accusamus laudantium pariatur, quis praesentium fuga et nemo dolorem deserunt in incidunt nam. Distinctio, debitis officia.</p>
-            <a href="">Ver mais</a>
+            <a href="#*mid-content" class="buttonVeja">Veja Mais<img src="/imagens/Arrow1.svg" alt="" width="22px" height="30px" class="arrow"><img src="/imagens/Arrow2.svg" alt="" width="22px" height="30px" class="arrow2"></a>
         </main>
-
+    </div>
+    </section>  
+    <div class="mid-content" id="mid-content">
+        <p class="mid-title">Confecção de artes Artesanais</p>
+      <div class="img-content">
+        <img src="imagens/earrings-jewel-svgrepo-com (1).svg" height="120px" class="brinco">
+        <img src="imagens/bracelet-svgrepo-com.svg" height="120px" class="bracelet">
+        <img src="imagens/necklace-svgrepo-com.svg" height="120px" class="colar">
       </div>
-
+        <p class="mid-title-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta qui nobis eum sapiente cum. Laborum temporibus delectus aliquid consequatur! Placeat, quo deserunt! Molestiae cupiditate iure temporibus! Maxime, praesentium sunt. Dolorem.</p>
+    </div>    
         <aside>
-            <p class="title">Conheça nossas principais características</p>
-          <div class="contents">
+          <div class="titlebox">
+            <p class="title">Conheça Nossas Principais Características</p>
+          </div>  
+        <div class="contents">
            <div class="content1">
-            <img src="/imagens/delivery2.svg" alt="" width="210px" height="179px" id="delivery1"><img src="/imagens/Group 53.svg" alt="" width="210px" height="179px" id="delivery2">
+            <img src="/imagens/delivery2.svg" alt="" width="210px" height="179px" id="delivery1" loading="lazy"><img src="/imagens/Group 53.svg" alt="" width="210px" height="179px" id="delivery2" loading="lazy">
             <div class="title1">Entrega Rápida</div>
             <p class="title1-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse assumenda nostrum totam adipisci, excepturi cumque magnam at ex exercitationem numquam, quae, dicta labore accusamus necessitatibus amet praesentium soluta fuga fugit?</p>
            </div> 
 
            <div class="content2">
-            <img src="/imagens/blink.svg" alt="" width="165px" height="180px" id="blink1"><img src="/imagens/blinkno.svg" alt="" width="185px" height="180px" id="blink2">
+            <img src="/imagens/blink.svg" alt="" width="165px" height="180px" id="blink1" loading="lazy"><img src="/imagens/blinkno.svg" alt="" width="185px" height="180px" id="blink2" loading="lazy">
             <div class="title2">Feitas para Você</div>
             <p class="title2-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse assumenda nostrum totam adipisci, excepturi cumque magnam at ex exercitationem numquam, quae, dicta labore accusamus necessitatibus amet praesentium soluta fuga fugit?</p>
            </div> 
 
            <div class="content3">
-            <img src="/imagens/icon-park_diamond-necklace.svg" alt="" width="210px" height="180px" id="neck1"><img src="/imagens/necklace.svg" alt="" width="180px" height="180px" id="neck2">
+            <img src="/imagens/icon-park_diamond-necklace.svg" alt="" width="210px" height="180px" id="neck1" loading="lazy"><img src="/imagens/necklace.svg" alt="" width="180px" height="180px" id="neck2" loading="lazy">
             <div class="title3">Melhor Qualidade</div>
             <p class="title3-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse assumenda nostrum totam adipisci, excepturi cumque magnam at ex exercitationem numquam, quae, dicta labore accusamus necessitatibus amet praesentium soluta fuga fugit?</p> 
           </div> 
          </div> 
            
         </aside>
-      </div> 
-    
+
+    <div class="instagram">
+         <p class="insta-Title">Veja nosso portfólio:</p>
+         <div class="owl-carousel owl-theme">
+            <div class="itens"><img src="/imagens/img1.jpeg" alt="" class="box-film" loading="lazy"></div>
+            <div class="itens"><img src="/imagens/img2.jpeg" alt="" class="box-film" loading="lazy"></div>
+            <div class="itens"><img src="/imagens/img3.jpeg" alt="" class="box-film" loading="lazy"></div>
+            <div class="itens"><img src="/imagens/img4.jpeg" alt="" class="box-film" loading="lazy"></div>
+            <div class="itens"><img src="/imagens/img5.jpeg" alt="" class="box-film" loading="lazy"></div>
+            <div class="itens"><img src="/imagens/img6.jpeg" alt="" class="box-film" loading="lazy"></div>
+            <div class="itens"><img src="/imagens/img7.jpeg" alt="" class="box-film" loading="lazy"></div>
+            <div class="itens"><img src="/imagens/img8.jpeg" alt="" class="box-film" loading="lazy"></div>
+            <div class="itens"><img src="/imagens/img9.jpeg" alt="" class="box-film" loading="lazy"></div>
+            <div class="itens"><img src="/imagens/img11.jpeg" alt="" class="box-film" loading="lazy"></div>
+            <div class="itens"><img src="/imagens/img12.jpeg" alt="" class="box-film" loading="lazy"></div>
+            <div class="itens"><img src="/imagens/img13.jpeg" alt="" class="box-film" loading="lazy"></div>
+         </div>
+         <p class="insta-Title2">Faça seu pedido em uma de nossas redes sociais:</p>
+    </div>
     
     <footer>
         <!--logo-->
        <div class="footerlogo">
         <!--Icons-->
-        <div class="allicons">
-         <img src="/imagens/Facebook.svg" class="icon" id="icon1">
-         <img src="/imagens/Instagram.svg" class="icon" id="icon2">
-         <img src="/imagens/whatsapp.svg" class="icon" id="icon3">
-         <img src="/imagens/logos_google-maps.svg" class="icon" id="icon4">
+       <div class="allicons">
+        <div class="face">
+         <img src="/imagens/Facebook.svg" class="icon" id="icon1" loading="lazy"><p>ianRodrigoFace</p>
+        </div> 
+        <div class="whats">
+         <img src="/imagens/whatsapp.svg" class="icon" id="icon3" loading="lazy"><p>(75) 9 9851-5887</p>
+        </div> 
+        <div class="instaicon">
+            <img src="/imagens/Instagram.svg" class="icon" id="icon2" loading="lazy"><p>@semrendanaorende</p>
+           </div>
+        <div class="maps">
+         <img src="/imagens/logos_google-maps.svg" class="icon" id="icon4" loading="lazy"><p>Alagoinhas - Ba</p>
         </div>
+       </div>
         
         <!--Linha Divisória-->
-        <img src="/imagens/Rectangle 21.png" alt="" class="logofooter" width="380px">
-        <img src="/imagens/logo2.svg" alt="" width="80px" height="80px">
+        <img src="/imagens/Rectangle 21.png" alt="" class="logofooter" width="380px" loading="lazy">
+        <img src="/imagens/logoalt.svg" alt="" width="60px" height="60px" loading="lazy">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore molestias velit recusandae? Delectus voluptatem, incidunt animi necessitatibus consequatur iusto voluptate possimus impedit iure a maiores minus, molestias nam veniam vero!</p>
         <p>@ 2021 SemRendaNaoRende. Todos os direitos reservados.</p>
        </div>  
     </footer>
 
 
-    <!--Font Linksheet-->
-    <script type="text/javascript" src="/script.js"></script>
-    <!--Font Linksheet-->
-    <script src="https://kit.fontawesome.com/1fada6fc3d.js" crossorigin="anonymous"></script>
+    <!--JavaScript-->
+    <script type="text/javascript" src="/js/script.js"></script>
+    
+    <!--Owl Caroussel-->
 
+    <script src="/js/Owl/jquery.min.js"></script>
+    <script src="/js/Owl/owl.carousel.min.js"></script>
+    <script src="/js/Owl/setup.js"></script>
+
+    <!--SweerAlert Js-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--Bootstrap Js-->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
