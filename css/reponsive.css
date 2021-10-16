@@ -1,4 +1,4 @@
-/* Extra small devices (phones, 600px and down) */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     *{
@@ -7,6 +7,10 @@
         -moz-box-sizing: border-box; 
         -webkit-box-sizing: border-box; 
         box-sizing: border-box; 
+    }
+    
+    .dropdown-item{
+        font-size: 26px;
     }
 
     @font-face {
@@ -456,6 +460,10 @@ footer .allicons{
     justify-content: space-around;
 }
 
+.instaicon{
+    display: none;
+}
+
 .allicons .face, .whats, .maps, .instaicon{
     cursor: pointer;
 }
@@ -484,6 +492,29 @@ footer p{
     width: 80%;
     margin: auto;
     margin-bottom: 5px;
+}
+
+.float{
+    z-index: 99;    
+    position:fixed;
+    width:70px;
+    height:70px;
+    bottom:30px;
+    right:30px;
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+    margin-top:22px;
+}
+
+#icon2{
+    width: 58.5px;
+    height: 70px;
 }
 
 }
@@ -959,6 +990,14 @@ footer .allicons{
     cursor: pointer;
 }
 
+.instaicon{
+    display: none;
+}
+#icon2{
+    width: 70px;
+    height: 84px;
+}
+
 .allicons .face p, .whats p, .maps p, .instaicon p{
     font-size: 0.9em;
     opacity: 0;
@@ -984,6 +1023,24 @@ footer p{
     width: 80%;
     margin: auto;
     margin-bottom: 5px;
+}
+
+.float{
+    z-index: 99;    
+    position:fixed;
+    width:85px;
+    height:85px;
+    bottom:30px;
+    right:30px;
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+    margin-top:22px;
 }
 
 }
@@ -1481,7 +1538,13 @@ footer p{
     margin-bottom: 5px;
 }
 
-    
+.float{
+    display: none;
+}
+
+.my-float{
+    display: none;
+}    
     
     
 }
@@ -2002,6 +2065,14 @@ footer p{
         margin: auto;
         margin-bottom: 5px;
     }
+
+    .float{
+        display: none;
+    }
+    
+    .my-float{
+        display: none;
+    }    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -2067,7 +2138,7 @@ footer p{
         color: white;
         border-radius: 8px;
     }
-    
+
     header a:active{
         background-color: white;
         border: 1px solid violet;
@@ -2078,10 +2149,13 @@ footer p{
     
     
     .logo{
-        display: block;
         margin-left: -200px;
+        z-index: 1;
     }
-
+    
+    .menu1{
+        z-index: 99;
+    }
     header .logo a:hover{
         padding: 0;
         border: none;
@@ -2097,6 +2171,8 @@ footer p{
         display: none;
     }
     
+    
+
     .menu2 button{
         border: none;
         color: white;
@@ -2286,28 +2362,19 @@ footer p{
         
     }
     
-    aside img{
-        margin-bottom: 30px;
-    }
-    
     aside .title{
         font-family: Baumans, sans-serif;
         color: rgb(255, 0, 179);
-        margin: auto;
+       
         font-size: 3.1em;
         margin-top: 50px;
-        text-align: center;
+       
         margin-left: -200px;
         width: 1000px;
-
-        
-
     }
     
-    aside .contents{
-        display: flex;
-        flex-direction: row;
-        width: 90%;
+    aside .contents{    
+        width: 100%;
         margin: auto;
     }
     
@@ -2338,12 +2405,12 @@ footer p{
 
 .content1:hover #delivery2{
     display: inline-block;
-    margin-left: -500px;
+    margin-left: -520px;
 }
 
 .content2 #blink2{
     display: block;
-    margin-left: -10px;
+    margin-left: -3px;
 }
 
 .content2:hover #blink2{
@@ -2376,72 +2443,73 @@ footer p{
     margin-right: -140px;
 }
     
-    .title1, .title2, .title3{
-        font-family: Roboto, sans-serif;
-        font-weight: bold;
-        font-size: 1.2em;
-        cursor: pointer;
-        display: flex;
-    }
+.title1, .title2, .title3{
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+}
     
-    .title1{
-        text-align: left;
-        margin-left: -280px;
-    }
+.title1{
+    text-align: left;
+    margin-left: -280px;
+}
     
     
-    .title2{
-        width: 500px;
-
+.title2{
+    width: 500px;
+    padding-left: 7px;
 }
 
-    .title3{
-        text-align: right;
-        margin-right: 9px;
-        margin-left: 235px;
-        width: 500px;
-    }
+.title3{
+    text-align: right;
+    margin-right: 9px;
+    margin-left: 235px;
+    width: 500px;
+}
     
-    .title1-text, .title2-text, .title3-text{
-        font-size: 0.7em;
-        opacity:0;
-        height: 0;
-        padding: 0 8px;
-        overflow: hidden;
-        transition: all .3s ease .15s;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-        padding: 10px;
-        color: rgba(0, 0, 0, 0.911);
-        font-family: Montserrat, sans-serif;
-    }
+.title1-text, .title2-text, .title3-text{
+    font-size: 0.7em;
+    opacity:0;
+    height: 0;
+    padding: 0 8px;
+    overflow: hidden;
+    transition: all .3s ease .15s;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.911);
+    font-family: Montserrat, sans-serif;
+}
     
-    .title1-text{
-        text-align: left;
-        margin-left: -290px;
-        width: 250px;
+.title1-text{
+    text-align: left;
+    margin-left: -290px;
+    width: 250px;
 
-    }
+}
     
-    .title2-text{
-        text-align: center;
-        margin-left: -40px;
-        width: 250px;
-    }
+.title2-text{
+    text-align: center;
+    margin-left: -35px;
+    width: 250px;
+   
+}
     
     
-    .title3-text{
-        text-align: right;
-        margin-left: 210px;
-        width: 250px;
-    }
+.title3-text{
+    text-align: right;
+    margin-left: 210px;
+    width: 250px;
+}
 
-    .content1 .title1:hover + .title1-text, .content2 .title2:hover + .title2-text, .content3 .title3:hover + .title3-text{
-        opacity:1;
-        height: 200px;
-        padding: 8px; 
-        transition: all 0.2s ease-out;
-    }
+.content1 .title1:hover + .title1-text, .content2 .title2:hover + .title2-text, .content3 .title3:hover + .title3-text{
+    opacity:1;
+    height: 200px;
+    padding: 8px; 
+    transition: all 0.2s ease-out;
+}
     
     /*Instagram*/
     
@@ -2553,5 +2621,15 @@ footer p{
         margin: auto;
         margin-bottom: 5px;
     }
+    
+    
+    .float{
+        display: none;
+    }
+    
+    .my-float{
+        display: none;
+    }    
+    
 }
 
