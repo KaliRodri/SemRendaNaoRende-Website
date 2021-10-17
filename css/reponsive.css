@@ -15,17 +15,17 @@
 
     @font-face {
         font-family: Baumans;
-        src: url(fonts/Baumans/Baumans-Regular.ttf);
+        src: url(../fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(fonts/Roboto/Roboto-Bold.ttf);
+        src: url(../fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(fonts/Montserrat/Montserrat-Light.ttf);
+        src: url(../fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     header{
@@ -62,7 +62,7 @@
     }
     
     section{
-        background-image: url(../imagens/fundo2.jpg);
+        background-image: url(../../imagens/fundo2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
