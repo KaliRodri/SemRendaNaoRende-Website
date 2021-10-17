@@ -15,17 +15,17 @@
 
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(../fonts/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(../fonts/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(../fonts/Montserrat-Light.ttf);
     }
     
     header{
@@ -537,17 +537,17 @@ footer p{
 
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(../fonts/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(../fonts/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(../fonts/Montserrat-Light.ttf);
     }
     
     header{
@@ -1061,17 +1061,17 @@ footer p{
 
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(../fonts/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(../fonts/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(../fonts/Montserrat-Light.ttf);
     }
     
     #menu-sm{
@@ -1589,17 +1589,17 @@ footer p{
     
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(../fonts/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(../fonts/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(../fonts/Montserrat-Light.ttf);
     }
     
     body{
@@ -2128,12 +2128,12 @@ footer p{
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(../fonts/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(../fonts/Montserrat-Light.ttf);
     }
     body{
            overflow-x: hidden;
