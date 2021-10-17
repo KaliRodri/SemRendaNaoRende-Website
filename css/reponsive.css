@@ -128,7 +128,8 @@
     }
     
     main a{
-        width: 170px;
+        width: 270px;
+        height: 90px;
         text-decoration: none;
         display: inline-flex;
         justify-content: space-around;
@@ -169,7 +170,7 @@
         margin-bottom: 150px;
     }
     
-     .mid-content{
+    .mid-content{
     display: inline-flex;
     flex-direction: column;
     height: 500px;
@@ -501,8 +502,8 @@ footer p{
 .float{
     z-index: 99;    
     position:fixed;
-    width:70px;
-    height:70px;
+    width:81px;
+    height:81px;
     bottom:30px;
     right:30px;
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
@@ -517,8 +518,8 @@ footer p{
 }
 
 #icon2{
-    width: 58.5px;
-    height: 70px;
+    width: 66.5px;
+    height: 81px;
 }
 }
 
