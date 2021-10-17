@@ -44,8 +44,9 @@
     }
      
     header .logo{
-       display: inline-block;
-       margin-left: 417px;
+       margin-top: -98px;
+       margin-right: 320px;
+       
     }
 
     .menu1, .menu2{
@@ -531,6 +532,7 @@ footer p{
     
     .dropdown-item{
         font-size: 26px;
+   
     }
 
     @font-face {
@@ -566,8 +568,8 @@ footer p{
     header .logo{
        display: flex;
        width: 100%;
-       justify-content: end;
-       margin-right: -21px;
+       justify-content: start;
+       margin-top: -98px;
        
     }
 
@@ -575,9 +577,7 @@ footer p{
         display: none;
     }
     
-    #menu-sm{
-        margin: 400px;
-    }
+    
 
     /*Conteúdo Inicial*/
 
@@ -618,7 +618,7 @@ footer p{
         margin-top: -20px;
         color: rgb(255, 0, 179);
         font-size: 3.7em;
-        text-shadow: 1px 2px 10px black;
+        text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
         font-weight: bold;
         padding-left: 30px;
     }
@@ -1089,6 +1089,14 @@ footer p{
         position: fixed;
     }
     
+    #who-Are{
+        display: none;
+    }
+
+    #contact{
+        display: none;
+    }
+
     header .menu1, .menu2{
         display: inline-flex;
         width: 100%;
@@ -1123,6 +1131,12 @@ footer p{
         padding: 0;
         border: none;
         background-color: transparent;
+    }
+
+    .logo{
+        margin-top: -97px;
+        width: 100px;
+        height: 100px;
     }
     
     header .menu2 img{
@@ -1193,7 +1207,7 @@ main .welcome{
     margin-top: -20px;
     color: rgb(255, 0, 179);
     font-size: 3.7em;
-    text-shadow: 1px 2px 10px black;
+    text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
     font-weight: bold;
     padding-left: 30px;
 }
@@ -1543,12 +1557,22 @@ footer p{
 }
 
 .float{
-    display: none;
+    z-index: 99;    
+    position:fixed;
+    width:85px;
+    height:85px;
+    bottom:30px;
+    right:30px;
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
 }
 
 .my-float{
-    display: none;
-}    
+    margin-top:22px;
+} 
     
     
 }
@@ -1601,6 +1625,14 @@ footer p{
         position: fixed;
     }
     
+    #who-Are{
+        display: none;
+    }
+
+    #contact{
+        display: none;
+    }
+
     header .menu1, .menu2{
         display: inline-flex;
         width: 100%;
@@ -1632,7 +1664,7 @@ footer p{
     
 
     .logo{
-        margin-left: -95px;
+        margin-top: -97px;
     }
     
     header .logo a:hover{
@@ -1709,7 +1741,7 @@ footer p{
         margin-top: -40px;
         color: rgb(255, 0, 179);
         font-size: 4.3em;
-        text-shadow: 1px 2px 10px black;
+        text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
         font-weight: bold;
         padding-left: 30px;
     }
@@ -2133,7 +2165,7 @@ footer p{
     
     header a{
         text-decoration: none;
-        color: white;
+        color: rgb(255, 255, 255);
     }
     
     header a:hover{
@@ -2153,7 +2185,8 @@ footer p{
     
     
     .logo{
-        margin-left: -200px;
+        margin-top: -97px;
+        margin-left: 0;
         z-index: 1;
     }
     
@@ -2236,7 +2269,7 @@ footer p{
         margin-top: -20px;
         color: rgb(255, 0, 179);
         font-size: 3.7em;
-        text-shadow: 1px 2px 10px black;
+        text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
         font-weight: bold;
         padding-left: 30px;
     }
@@ -2369,10 +2402,8 @@ footer p{
     aside .title{
         font-family: Baumans, sans-serif;
         color: rgb(255, 0, 179);
-       
         font-size: 3.1em;
         margin-top: 50px;
-       
         margin-left: -200px;
         width: 1000px;
     }
@@ -2592,9 +2623,16 @@ footer p{
         display: flex;
         justify-content: space-around;
     }
-    
+
+    #icon2{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
     .allicons .face, .whats, .maps, .instaicon{
         cursor: pointer;
+        display: inline;
     }
     
     .allicons .face p, .whats p, .maps p, .instaicon p{
