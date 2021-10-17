@@ -2166,6 +2166,14 @@ footer p{
         font-family: Montserrat, sans-serif;
     }
     
+    #who-Are{
+        display: inline-flex;
+    }
+
+    #contact{
+        display: inline-flex;
+    }
+   
     header a{
         text-decoration: none;
         color: rgb(255, 255, 255);
