@@ -2123,7 +2123,7 @@ footer p{
     
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(../fonts/Baumans-Regular.ttf);
     }
     
     @font-face {
