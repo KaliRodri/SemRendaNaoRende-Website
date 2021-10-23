@@ -380,11 +380,13 @@ aside .contents{
     
 }
 
-.title2{
-    text-align: left;
+.title2-text{
+    text-align: center;
     width: 320px;
     margin-left: 10px;
-}   
+    
+    
+}
 
 .title3-text{
     text-align: center;
