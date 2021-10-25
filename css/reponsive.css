@@ -90,7 +90,7 @@
     main .welcome{
         font-family: Baumans, sans-serif;
         margin-top: -20px;
-        color: rgb(255, 0, 179);
+        color: rgb(253, 177, 54);
         font-size: 3.7em;
         text-shadow: 1px 2px 10px black;
         font-weight: bold;
@@ -1353,7 +1353,7 @@ section{
 main .welcome{
     font-family: Baumans, sans-serif;
     margin-top: -20px;
-    color: rgb(255, 0, 179);
+    color: rgb(253, 177, 54);
     font-size: 3.7em;
     text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
     font-weight: bold;
@@ -1937,7 +1937,7 @@ footer p{
     main .welcome{
         font-family: Baumans, sans-serif;
         margin-top: -40px;
-        color: rgb(255, 0, 179);
+        color: rgb(253, 177, 54);
         font-size: 4.3em;
         text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
         font-weight: bold;
