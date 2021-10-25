@@ -1007,7 +1007,55 @@ footer p{
         
        
     }
+    
+    @keyframes animacao-brinco {
+        from{
+           transform: translateX(-500px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+    
+    @keyframes animacao-pulseira{
+        from{
+           transform: translateX(500px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
 
+    @keyframes animacao-colar{
+        from{
+           transform: translateX(-500px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+
+    .brincos img{
+        animation-name: animacao-brinco;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+
+    .pulseiras img{
+        animation-name: animacao-pulseira;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+
+    .colares img{
+        animation-name: animacao-colar;
+        animation-duration: 2.0s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+   
     .text p{
         font-size: 2em;
         font-family: Baumans, sans-serif;
@@ -1363,6 +1411,54 @@ footer p{
         
         
        
+    }
+   
+   @keyframes animacao-brinco {
+        from{
+           transform: translateX(-500px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+    
+    @keyframes animacao-pulseira{
+        from{
+           transform: translateX(500px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes animacao-colar{
+        from{
+           transform: translateX(-500px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+
+    .brincos img{
+        animation-name: animacao-brinco;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+
+    .pulseiras img{
+        animation-name: animacao-pulseira;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+
+    .colares img{
+        animation-name: animacao-colar;
+        animation-duration: 2.0s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
     }
 
     .text p{
