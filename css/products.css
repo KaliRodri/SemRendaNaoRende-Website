@@ -140,7 +140,7 @@
         display: block;
         text-decoration: none;
         background: linear-gradient( 80deg, rgba(94, 207, 245, 0.7), rgb(227, 245, 243));;
-        border: solid 1px lightblue;
+        border: solid 1px rgb(255, 255, 255);
         border-radius: 8px;
         padding: 10px;
         font-size: 0.5em;
@@ -393,7 +393,7 @@ footer p{
         display: block;
         text-decoration: none;
         background: linear-gradient( 80deg, rgba(94, 207, 245, 0.7), rgb(227, 245, 243));;
-        border: solid 1px lightblue;
+        border: solid 1px rgb(255, 255, 255);
         border-radius: 8px;
         padding: 10px;
         font-size: 0.5em;
@@ -713,7 +713,7 @@ footer p{
         display: block;
         text-decoration: none;
         background: linear-gradient( 80deg, rgba(94, 207, 245, 0.7), rgb(227, 245, 243));;
-        border: solid 1px lightblue;
+        border: solid 1px rgb(255, 255, 255);
         border-radius: 8px;
         padding: 10px;
         font-size: 0.5em;
@@ -1076,7 +1076,7 @@ footer p{
         display: block;
         text-decoration: none;
         background: linear-gradient( 80deg, rgba(94, 207, 245, 0.7), rgb(227, 245, 243));
-        border: solid 1px lightblue;
+        border: solid 1px rgb(255, 255, 255);
         border-radius: 8px;
         padding: 10px;
         font-size: 0.5em;
@@ -1432,7 +1432,7 @@ footer p{
         display: block;
         text-decoration: none;
         background: linear-gradient( 80deg, rgba(94, 207, 245, 0.7), rgb(227, 245, 243));
-        border: solid 1px lightblue;
+        border: solid 1px rgb(255, 255, 255);
         border-radius: 8px;
         padding: 10px;
         font-size: 0.5em;
