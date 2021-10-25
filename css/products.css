@@ -561,18 +561,19 @@ footer p{
     }
     
     header a:hover{
-        border: 1px solid rgba(255, 255, 255, 0.664);
-        padding: 10px;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.664);
+        padding: 5px;
         color: white;
-        border-radius: 8px;
+        border-radius: 0px;
     }
     
     header a:active{
-        background-color: white;
-        border: 1px solid violet;
-        padding: 10px;
-        color: rgb(255, 0, 179);
-        border-radius: 8px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgba(94, 207, 245);
+        
+        
     }
     
     
@@ -887,18 +888,19 @@ footer p{
     }
 
     header a:hover{
-        border: 1px solid rgba(255, 255, 255, 0.664);
-        padding: 10px;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.664);
+        padding: 5px;
         color: white;
-        border-radius: 8px;
+        border-radius: 0px;
     }
-
+    
     header a:active{
-        background-color: white;
-        border: 1px solid violet;
-        padding: 10px;
-        color: rgb(255, 0, 179);
-        border-radius: 8px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgba(94, 207, 245);
+        
+        
     }
     
     
@@ -1243,18 +1245,19 @@ footer p{
     }
 
     header a:hover{
-        border: 1px solid rgba(255, 255, 255, 0.664);
-        padding: 10px;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.664);
+        padding: 5px;
         color: white;
-        border-radius: 8px;
+        border-radius: 0px;
     }
-
+    
     header a:active{
-        background-color: white;
-        border: 1px solid violet;
-        padding: 10px;
-        color: rgb(255, 0, 179);
-        border-radius: 8px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgba(94, 207, 245);
+        
+        
     }
     
     
