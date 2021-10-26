@@ -15,17 +15,17 @@
 
    @font-face {
         font-family: Baumans;
-        src: url(/fonts/Baumans/Baumans-Regular.ttf);
+        src: url(Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(/fonts/Roboto/Roboto-Bold.ttf);
+        src: url(Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
+        src: url(Montserrat-Light.ttf);
     }
     
     header{
@@ -62,7 +62,7 @@
     }
     
     section{
-        background-image: url(/imagens/fundo2.jpg);
+        background-image: url(fundo2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -609,17 +609,17 @@ footer p{
 
     @font-face {
         font-family: Baumans;
-        src: url(/fonts/Baumans/Baumans-Regular.ttf);
+        src: url(Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(/fonts/Roboto/Roboto-Bold.ttf);
+        src: url(Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
+        src: url(Montserrat-Light.ttf);
     }
     
     header{
@@ -660,7 +660,7 @@ footer p{
     }
     
     section{
-        background-image: url(/imagens/fundo2.jpg);
+        background-image: url(fundo2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1206,17 +1206,17 @@ footer p{
 
     @font-face {
         font-family: Baumans;
-        src: url(/fonts/Baumans/Baumans-Regular.ttf);
+        src: url(Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(/fonts/Roboto/Roboto-Bold.ttf);
+        src: url(Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
+        src: url(Montserrat-Light.ttf);
     }
     
     #menu-sm{
@@ -1777,17 +1777,17 @@ footer p{
     
     @font-face {
         font-family: Baumans;
-        src: url(/fonts/Baumans/Baumans-Regular.ttf);
+        src: url(Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(/fonts/Roboto/Roboto-Bold.ttf);
+        src: url(Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
+        src: url(Montserrat-Light.ttf);
     }
     
     body{
@@ -1901,7 +1901,7 @@ footer p{
     }
     
     section{
-        background-image: url(/imagens/fundo2.jpg);
+        background-image: url(fundo2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -2435,17 +2435,17 @@ footer p{
     
     @font-face {
         font-family: Baumans;
-        src: url(/fonts/Baumans/Baumans-Regular.ttf);
+        src: url(Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(/fonts/Roboto/Roboto-Bold.ttf);
+        src: url(Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
+        src: url(Montserrat-Light.ttf);
     }
     body{
         overflow-x: hidden;
@@ -2561,7 +2561,7 @@ footer p{
     }
     
     section{
-        background-image: url(/imagens/fundo2.jpg);
+        background-image: url(fundo2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
