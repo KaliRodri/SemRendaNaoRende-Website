@@ -15,17 +15,17 @@
 
    @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     header{
@@ -62,7 +62,7 @@
     }
     
     section{
-        background-image: url(fundo2.jpg);
+        background-image: url(/imagens/fundo2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -88,7 +88,7 @@
         color: rgb(253, 177, 54);
         font-size: 3.7em;
         text-shadow: 1px 2px 10px black;
-        font-weight: bold;
+        font-weight: lighter;
         padding-left: 30px;
     }
     
@@ -102,6 +102,7 @@
         text-shadow: 1px 1px rgb(0, 0, 0);
         margin-bottom: 5px;
         display: none;
+       
     }
     
     main a img{
@@ -110,12 +111,15 @@
     }
     
     main .lotus{
-        margin-bottom: 35px;
+        margin-bottom: 5px;
         margin-left: 15px;
+        margin-top: -50px;
+        
     }
     
     main .line{
         margin-top: -100px;
+        
     }
     
     .buttonVeja{
@@ -165,15 +169,14 @@
         margin-bottom: 150px;
     }
     
-     .mid-content{
+    .mid-content{
     display: inline-flex;
     flex-direction: column;
     height: 500px;
     background-color: rgb(253, 177, 54);
     color: white;
     text-shadow: 1px 1px 1px black;
-    
-}
+    }
 
 .mid-content .img-content{
     display: inline-flex;
@@ -606,17 +609,17 @@ footer p{
 
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     header{
@@ -657,7 +660,7 @@ footer p{
     }
     
     section{
-        background-image: url(fundo2.jpg);
+        background-image: url(/imagens/fundo2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -665,7 +668,7 @@ footer p{
         height: 650px;  
     }
     
-   .container main{
+    .container main{
         text-align: center;
         margin: auto;
         margin-top: 100px;
@@ -679,17 +682,18 @@ footer p{
     main .welcome{
         font-family: Baumans, sans-serif;
         margin-top: -20px;
-        color: rgb(255, 0, 179);
+        color: rgb(253, 177, 54);
         font-size: 4.5em;
         text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
-        font-weight: bold;
+        font-weight: lighter;
         padding-left: 30px;
     }
     
     .lotus{
         margin-left: 20px;
+        margin-top: -50px ;
     }
-    
+
     main .welcome-Text{
         color: rgb(255, 255, 255);
         margin: auto;
@@ -1202,17 +1206,17 @@ footer p{
 
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     #menu-sm{
@@ -1268,7 +1272,6 @@ footer p{
         
     }
     
-    
     header .logo a:hover{
         padding: 0;
         border: none;
@@ -1320,7 +1323,7 @@ footer p{
 }
 
 section{
-    background-image: url(fundo2.jpg);
+    background-image: url(/imagens/fundo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1341,19 +1344,16 @@ section{
 
 main .welcome{
     font-family: Baumans, sans-serif;
-    margin-top: -20px;
+    margin-top: -70px;
     color: rgb(253, 177, 54);
     font-size: 5em;
     text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
-    font-weight: bold;
+    font-weight: lighter;
     padding-left: 30px;
 }
 
-.lotus{
-    margin-left: 20px;
-   
-}
-   
+
+
 main .welcome-Text{
     color: rgb(255, 255, 255);
     margin: auto;
@@ -1363,16 +1363,13 @@ main .welcome-Text{
     font-family: Montserrat, sans-serif;
     text-shadow: 1px 1px rgb(0, 0, 0);
     margin-bottom: 5px;
+    
 }
 
 main a img{
     margin: auto;
 }
 
-main .lotus{
-    margin-bottom: 35px;
-    margin-left: 15px;
-}
 
 main .line{
     margin-top: -100px;
@@ -1398,7 +1395,7 @@ main a{
     flex-direction: column;
     font-size: 1.3em;
     margin: auto;
-    margin-top: 25px;
+    
 }
 
 main a .arrow2{
@@ -1780,17 +1777,17 @@ footer p{
     
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     body{
@@ -1904,7 +1901,7 @@ footer p{
     }
     
     section{
-        background-image: url(fundo2.jpg);
+        background-image: url(/imagens/fundo2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1912,6 +1909,7 @@ footer p{
         height: 600px;  
         width: 104%;
     }
+    
     .container main{
         text-align: center;
         margin: auto;
@@ -1929,8 +1927,9 @@ footer p{
         color: rgb(253, 177, 54);
         font-size: 5em;
         text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
-        font-weight: bold;
+        
         padding-left: 30px;
+        font-weight: lighter;
     }
     
     .lotus{
@@ -1953,26 +1952,27 @@ footer p{
         display: inline-flex;
         border-radius: 10px;
         padding: 7px;
+        
     }
     
     .line{
         display: none;
     }
-    
+
     main a img{
         margin: auto;
         
     }
     
-   @keyframes leaf {
+    @keyframes leaf {
         0%{
-            transform: translate(-20px,-75px) scale(0.8, 0.8);
+            transform: translate(-20px,-105px) scale(0.8, 0.8);
             opacity: 0.4;
         }
         
         
         50%{
-            transform: translate(55px, -25px) scale(0.9, 0.9);
+            transform: translate(55px, -55px) scale(0.9, 0.9);
             opacity: 0.8;
         }
 
@@ -1988,9 +1988,9 @@ footer p{
         animation-duration: 1s;
         animation-direction: alternate;
     }
-   
+
     main .lotus{
-        margin-bottom: 15px;
+        margin-bottom: 45px;
         margin-left: 15px;
     }
     
@@ -2435,17 +2435,17 @@ footer p{
     
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     body{
         overflow-x: hidden;
@@ -2497,7 +2497,7 @@ footer p{
         color: white;
         border-radius: 0px;
     }
-    
+
     header a:active{
         background: none;
         border: none;
@@ -2561,7 +2561,7 @@ footer p{
     }
     
     section{
-        background-image: url(fundo2.jpg);
+        background-image: url(/imagens/fundo2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -2583,24 +2583,27 @@ footer p{
     
     main .welcome{
         font-family: Baumans, sans-serif;
-        margin-top: -00px;
+        margin-top: -80px;
         color: rgb(253, 177, 54);
-        font-size: 5em;
+        font-size: 5.5em;
         text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
         font-weight: bold;
         padding-left: 30px;
+        font-weight: lighter;
     }
     
     .lotus{
-        margin-left: 20px;
+        margin: auto;
+        display: block;
+        width: 100%;
+        margin-top: -50px;
         
-       
     }
     
     main .welcome-Text{
         color: rgb(255, 255, 255);
         margin: auto;
-        margin-top: -15px;
+        margin-top: 25px;
         width: 70%;
         font-size: 1.35em;
         font-family: Montserrat, sans-serif;
@@ -2621,10 +2624,7 @@ footer p{
         
     }
     
-    main .lotus{
-        margin-bottom: 35px;
-        margin-left: 15px;
-    }
+   
     
     main .line{
         margin-top: -100px;
@@ -2643,14 +2643,16 @@ footer p{
         padding: 5px;
         border-radius: 8px;
         color: white;
-        border: 0.5px solid white;
+        border: 0.5px solid rgb(153, 114, 114);
         box-shadow: 0.8px 0.8px 1px black;
         margin-top: 18px;
         display: flex;
         flex-direction: column;
         font-size: 1.3em;
         margin: auto;
-        margin-top: 55px;
+        margin-top: 75px;
+        
+       
     }
     
     main a .arrow2{
@@ -2676,6 +2678,32 @@ footer p{
         margin-bottom: 150px;
     }
     
+    @keyframes leaf {
+        0%{
+            transform: translate(-20px,-75px) scale(0.8, 0.8);
+            opacity: 0.4;
+        }
+        
+        
+        50%{
+            transform: translate(55px, -25px) scale(0.9, 0.9);
+            opacity: 0.8;
+        }
+
+        100%{
+            transform: translate(0px, 0px) scale(1, 1);
+            opacity: 1;
+        }
+        
+    }
+    
+    .lotus{
+        animation-name: leaf;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-delay: 0.5s;
+    }
+
     /*Segundo Conteúdo*/
     
     .mid-content{
