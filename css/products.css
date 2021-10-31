@@ -13,17 +13,17 @@
 
    @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     header{
@@ -133,14 +133,27 @@
         margin-top: -1px;
         padding-top:30px ;
         padding-bottom:30px ;
-        background: linear-gradient( #F5CCE8, white);
+        background: linear-gradient( #F5CCE8, #F5CCE8);
     }
     
+    .acessories{
+        padding-top: 30px;
+        background: linear-gradient( #F5CCE8, #F5CCE8);
+    }
+    
+    #acessories-text{
+        display: block;
+        margin-top: -1px;
+        padding-top:30px ;
+        padding-bottom:30px ;
+        background: linear-gradient( #F5CCE8, white);
+    }
+
     .botao{
         display: block;
         text-decoration: none;
         background: linear-gradient( 80deg, rgba(94, 207, 245, 0.7), rgb(227, 245, 243));;
-        border: solid 1px rgb(255, 255, 255);
+        border: solid 1px lightblue;
         border-radius: 8px;
         padding: 10px;
         font-size: 0.5em;
@@ -264,17 +277,17 @@ footer p{
 
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     header{
@@ -386,14 +399,18 @@ footer p{
         margin-top: -1px;
         padding-top:30px ;
         padding-bottom:30px ;
-        background: linear-gradient( #F5CCE8, white);
+        background: linear-gradient( #F5CCE8, #F5CCE8);
     }
     
+    .acessories{
+        background: linear-gradient( #F5CCE8, white);
+    }
+
     .botao{
         display: block;
         text-decoration: none;
         background: linear-gradient( 80deg, rgba(94, 207, 245, 0.7), rgb(227, 245, 243));;
-        border: solid 1px rgb(255, 255, 255);
+        border: solid 1px lightblue;
         border-radius: 8px;
         padding: 10px;
         font-size: 0.5em;
@@ -510,17 +527,17 @@ footer p{
 
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     #menu-sm{
@@ -560,29 +577,51 @@ footer p{
         color: white;
     }
     
+    .border{
+        transform: translateX(-20px) scaleX(0.2);
+        opacity: 0;
+    }
+    
+    .menu1 a:hover + .border{
+        transform: translateX(0px) scaleX(1);
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .menu1 a:active + .border{
+        color: #5258cf;
+        display: none;
+    }
+
+    .menu2 a:hover + .border{
+        transform: translateX(0px) scaleX(1);
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+    }
+     
+    .menu2 a:active + .border{
+        color: #5258cf;
+        display: none;
+    }
+
     header a:hover{
-        border: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.664);
-        padding: 5px;
         color: white;
-        border-radius: 0px;
     }
     
     header a:active{
         background: none;
         border: none;
-        border-bottom: 1px solid rgba(94, 207, 245);
-        
-        
+        padding: 1px;
+        border-bottom: 2.5px solid rgb(245, 205, 94);
+
     }
-    
     
     header .logo a:hover{
         padding: 0;
         border: none;
         background-color: transparent;
+        border: none;
     }
-
     .logo{
         margin-top: -97px;
         width: 100px;
@@ -627,10 +666,6 @@ footer p{
         display: block;
         padding-top: 0px;
         width: 100%;
-        
-        
-        
-
     }
     
     .main-section .mid-content img{
@@ -643,7 +678,6 @@ footer p{
     
     .main-section .mid-content img:hover{
         transform: scale(1.1, 1.1) rotate(-5deg);
-        
         transition: all .2s ease-in-out;
     }
 
@@ -707,14 +741,21 @@ footer p{
         margin-top: -1px;
         padding-top:30px ;
         padding-bottom:30px ;
-        background: linear-gradient( #F5CCE8, white);
+        background: linear-gradient( #F5CCE8, #F5CCE8);
     }
     
+    .acessories{
+        
+        background: linear-gradient(#F5CCE8, white);
+        
+       
+    }
+
     .botao{
         display: block;
         text-decoration: none;
         background: linear-gradient( 80deg, rgba(94, 207, 245, 0.7), rgb(227, 245, 243));;
-        border: solid 1px rgb(255, 255, 255);
+        border: solid 1px lightblue;
         border-radius: 8px;
         padding: 10px;
         font-size: 0.5em;
@@ -831,17 +872,17 @@ footer p{
     
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     body{
         overflow-x: hidden;
@@ -879,6 +920,54 @@ footer p{
         color: rgb(255, 255, 255);
     }
     
+    
+
+    .border{
+        transform: translateX(-20px) scaleX(0.2);
+        opacity: 0;
+    }
+    
+    .menu1 a:hover + .border{
+        transform: translateX(0px) scaleX(1);
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .menu1 a:active + .border{
+        color: #5258cf;
+        display: none;
+    }
+
+    .menu2 a:hover + .border{
+        transform: translateX(0px) scaleX(1);
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+    }
+     
+    .menu2 a:active + .border{
+        color: #5258cf;
+        display: none;
+    }
+
+    header a:hover{
+        color: white;
+    }
+    
+    header a:active{
+        background: none;
+        border: none;
+        padding: 1px;
+        border-bottom: 2.5px solid rgb(245, 205, 94);
+
+    }
+    
+    header .logo a:hover{
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        border: none;
+    }
+    
     #who-Are{
         display: inline-flex;
     }
@@ -887,23 +976,6 @@ footer p{
         display: inline-flex;
     }
 
-    header a:hover{
-        border: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.664);
-        padding: 5px;
-        color: white;
-        border-radius: 0px;
-    }
-    
-    header a:active{
-        background: none;
-        border: none;
-        border-bottom: 1px solid rgba(94, 207, 245);
-        
-        
-    }
-    
-    
     .logo{
         margin-top: -97px;
         margin-left: 0;
@@ -985,7 +1057,7 @@ footer p{
         margin-bottom: 0;
         padding-bottom: 50px;
         float: left;
-        padding-left: 70px;
+        padding-left: 10px;
         margin-top: -20px;
         background: linear-gradient(#FFCB77, #ADF0F2);
         
@@ -1007,8 +1079,8 @@ footer p{
         
        
     }
-    
-    @keyframes animacao-brinco {
+
+    @keyframes animacao-brinco-colar{
         from{
            transform: translateX(-500px);
         }
@@ -1017,7 +1089,7 @@ footer p{
         }
     }
     
-    @keyframes animacao-pulseira{
+    @keyframes animacao-pulseira-acessorio{
         from{
            transform: translateX(500px);
         }
@@ -1026,36 +1098,35 @@ footer p{
         }
     }
 
-    @keyframes animacao-colar{
-        from{
-           transform: translateX(-500px);
-        }
-        to{
-            transform: translateX(0px);
-        }
-    }
 
     .brincos img{
-        animation-name: animacao-brinco;
+        animation-name: animacao-brinco-colar;
         animation-duration: 1s;
         animation-iteration-count: 1;
         animation-direction: alternate;
     }
 
     .pulseiras img{
-        animation-name: animacao-pulseira;
+        animation-name: animacao-pulseira-acessorio;
         animation-duration: 1.5s;
         animation-iteration-count: 1;
         animation-direction: alternate;
     }
 
     .colares img{
-        animation-name: animacao-colar;
+        animation-name: animacao-brinco-colar;
         animation-duration: 2.0s;
         animation-iteration-count: 1;
         animation-direction: alternate;
     }
-   
+
+    .acessories img{
+        animation-name: animacao-pulseira-acessorio;
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    
     .text p{
         font-size: 2em;
         font-family: Baumans, sans-serif;
@@ -1093,8 +1164,8 @@ footer p{
         background-color: none;
         background: none;
         padding: 30px;
-        padding-top:100px ;
-        padding-bottom:80px ;
+        padding-top:280px ;
+        padding-bottom:0px ;
         width: 54%;
         margin-left: 0px;
         font-size: 0.75em;
@@ -1104,7 +1175,7 @@ footer p{
         padding-top: 80px;
         padding-bottom: 80px;
         background: none;
-        background: linear-gradient(#adf0f2,#F5CCE8, white);
+        background: linear-gradient(#adf0f2,#F5CCE8);
     }
 
     #colares-text{
@@ -1122,11 +1193,35 @@ footer p{
         
     }
     
+    .acessories{
+        display: flex;
+        justify-content: right;
+        background: linear-gradient(#F5CCE8, white);
+        padding-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 30px;
+        padding-right: 80px;
+       
+    }
+
+    #acessories-text{
+        display: block;
+        margin-top: -580px;
+        background-color: none;
+        background: none;
+        padding: 30px;
+        padding-top:300px ;
+        padding-bottom:0px ;
+        width: 54%;
+        margin-left: 0px;
+        font-size: 0.75em;
+    }
+
     .botao{
         display: block;
         text-decoration: none;
         background: linear-gradient( 80deg, rgba(94, 207, 245, 0.7), rgb(227, 245, 243));
-        border: solid 1px rgb(255, 255, 255);
+        border: solid 1px lightblue;
         border-radius: 8px;
         padding: 10px;
         font-size: 0.5em;
@@ -1236,17 +1331,17 @@ footer p{
     
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     body{
         overflow-x: hidden;
@@ -1284,6 +1379,60 @@ footer p{
         color: rgb(255, 255, 255);
     }
     
+    
+
+    .border{
+        transform: translateX(-20px) scaleX(0.2);
+        opacity: 0;
+    }
+    
+    .menu1 a:hover + .border{
+        transform: translateX(0px) scaleX(1);
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .menu1 a:active + .border{
+        color: #5258cf;
+        display: none;
+    }
+    
+    header #products .border{
+        display: block;
+        transform: translate(0,0);
+        opacity: 1;
+    }
+
+    .menu2 a:hover + .border{
+        transform: translateX(0px) scaleX(1);
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+    }
+     
+    .menu2 a:active + .border{
+        color: #5258cf;
+        display: none;
+    }
+  
+    header a:hover{
+        color: white;
+    }
+    
+    header a:active{
+        background: none;
+        border: none;
+        padding: 1px;
+        border-bottom: 2.5px solid rgb(245, 205, 94);
+
+    }
+    
+    header .logo a:hover{
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        border: none;
+    }
+
     #who-Are{
         display: inline-flex;
     }
@@ -1291,23 +1440,6 @@ footer p{
     #contact{
         display: inline-flex;
     }
-
-    header a:hover{
-        border: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.664);
-        padding: 5px;
-        color: white;
-        border-radius: 0px;
-    }
-    
-    header a:active{
-        background: none;
-        border: none;
-        border-bottom: 1px solid rgba(94, 207, 245);
-        
-        
-    }
-    
     
     .logo{
         margin-top: -97px;
@@ -1365,7 +1497,9 @@ footer p{
         width: 100%;
 
     }
+
     
+
     .main-section .mid-content img{
         display: flex;
         height: 350px;
@@ -1374,6 +1508,8 @@ footer p{
         
     }
     
+    
+
     .main-section .mid-content img:hover{
         transform: scale(1.1, 1.1) rotate(-5deg);
         
@@ -1396,6 +1532,54 @@ footer p{
         
     }
     
+    @keyframes animacao-brinco-colar{
+        from{
+           transform: translateX(-500px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+    
+    @keyframes animacao-pulseira-acessorio{
+        from{
+           transform: translateX(500px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+
+
+    .brincos img{
+        animation-name: animacao-brinco-colar;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+
+    .pulseiras img{
+        animation-name: animacao-pulseira-acessorio;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+
+    .colares img{
+        animation-name: animacao-brinco-colar;
+        animation-duration: 2.0s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        
+    }
+
+    .acessories img{
+        animation-name: animacao-pulseira-acessorio;
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+
     #brinco-text{
         display: block;
         margin-top: -519px;
@@ -1411,54 +1595,6 @@ footer p{
         
         
        
-    }
-   
-   @keyframes animacao-brinco {
-        from{
-           transform: translateX(-500px);
-        }
-        to{
-            transform: translateX(0px);
-        }
-    }
-    
-    @keyframes animacao-pulseira{
-        from{
-           transform: translateX(500px);
-        }
-        to{
-            transform: translateX(0px);
-        }
-    }
-
-    @keyframes animacao-colar{
-        from{
-           transform: translateX(-500px);
-        }
-        to{
-            transform: translateX(0px);
-        }
-    }
-
-    .brincos img{
-        animation-name: animacao-brinco;
-        animation-duration: 1s;
-        animation-iteration-count: 1;
-        animation-direction: alternate;
-    }
-
-    .pulseiras img{
-        animation-name: animacao-pulseira;
-        animation-duration: 1.5s;
-        animation-iteration-count: 1;
-        animation-direction: alternate;
-    }
-
-    .colares img{
-        animation-name: animacao-colar;
-        animation-duration: 2.0s;
-        animation-iteration-count: 1;
-        animation-direction: alternate;
     }
 
     .text p{
@@ -1488,7 +1624,7 @@ footer p{
         padding-bottom: 0px;
         margin-left: 0px;
         padding-top: 30px;
-        padding-right: 50px;
+        padding-right: 80px;
        
     }
     
@@ -1498,18 +1634,20 @@ footer p{
         background-color: none;
         background: none;
         padding: 30px;
-        padding-top:100px ;
-        padding-bottom:80px ;
+        padding-top:300px ;
+        padding-bottom:0px ;
         width: 54%;
         margin-left: 0px;
         font-size: 0.75em;
     }
 
     .colares{
+        
         padding-top: 80px;
         padding-bottom: 80px;
+        padding-left: 80px;
         background: none;
-        background: linear-gradient(#adf0f2,#F5CCE8, white);
+        background: linear-gradient(#adf0f2,#F5CCE8);
     }
 
     #colares-text{
@@ -1525,6 +1663,30 @@ footer p{
         font-size: 0.75em;
         float: right;
         
+    }
+
+    .acessories{
+        display: flex;
+        justify-content: right;
+        background: linear-gradient(#F5CCE8, white);
+        padding-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 30px;
+        padding-right: 80px;
+       
+    }
+
+    #acessories-text{
+        display: block;
+        margin-top: -580px;
+        background-color: none;
+        background: none;
+        padding: 30px;
+        padding-top:300px ;
+        padding-bottom:0px ;
+        width: 54%;
+        margin-left: 0px;
+        font-size: 0.75em;
     }
     
     .botao{
