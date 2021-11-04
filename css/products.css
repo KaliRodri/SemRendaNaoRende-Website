@@ -13,17 +13,17 @@
 
    @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     header{
@@ -235,27 +235,167 @@ footer p{
     margin-bottom: 5px;
 }
 
+footer .allicons{
+    display: none;
+}
+
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
 .float{
-    z-index: 99;    
-    position:fixed;
-    width:81px;
-    height:81px;
-    bottom:30px;
-    right:30px;
+	position:fixed;
+	width:85px;
+	height:85px;
+	bottom:40px;
+	right:40px;
+	background-color:rgb(255, 135, 36);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	z-index:1000;
+	animation: bot-to-top 2s ease-out;
+}
+
+.float img{
+    width: 70px;
+    height: 90px;
+}
+
+.float-button ul{
+	position:fixed;
+	right:46px;
+	padding-bottom:30px;
+	bottom:80px;
+	z-index:100;
+}
+
+.float-button ul li{
+	list-style:none;
+	margin-bottom:10px;
+}
+
+.float-button ul li img{
+    width: 55px;
+    height: 55px;
+    margin-top: 6.5px;
+}
+
+.float-button ul li a{
+	
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	width:70px;
+	height:70px;
+	display:block;
+}
+
+.float-button ul li .face{
+    background-color: #3a42cc;
+}
+
+.float-button ul li .insta{
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    box-shadow: 2px 2px 3px #999;
 }
 
-.my-float{
-    margin-top:22px;
+.float-button ul li .whats{
+    background-color: #3fcc3a;
 }
 
-#icon2{
-    width: 81px;
-    height: 81px;
+.float-button ul:hover{
+	visibility:visible!important;
+	opacity:1!important;
+}
+
+
+.float-button .my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+.float-button a#menu-share + ul{
+  visibility: hidden;
+}
+
+.float-button a#menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+.float-button a#menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+.float-button a#menu-share:hover > i{
+	animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
 }
 
     
@@ -277,17 +417,17 @@ footer p{
 
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     header{
@@ -492,27 +632,167 @@ footer p{
     margin-bottom: 5px;
 }
 
+footer .allicons{
+    display: none;
+}
+
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
 .float{
-    z-index: 99;    
-    position:fixed;
-    width:81px;
-    height:81px;
-    bottom:30px;
-    right:30px;
+	position:fixed;
+	width:85px;
+	height:85px;
+	bottom:40px;
+	right:40px;
+	background-color:rgb(255, 135, 36);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	z-index:1000;
+	animation: bot-to-top 2s ease-out;
+}
+
+.float img{
+    width: 70px;
+    height: 90px;
+}
+
+.float-button ul{
+	position:fixed;
+	right:46px;
+	padding-bottom:30px;
+	bottom:80px;
+	z-index:100;
+}
+
+.float-button ul li{
+	list-style:none;
+	margin-bottom:10px;
+}
+
+.float-button ul li img{
+    width: 55px;
+    height: 55px;
+    margin-top: 6.5px;
+}
+
+.float-button ul li a{
+	
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	width:70px;
+	height:70px;
+	display:block;
+}
+
+.float-button ul li .face{
+    background-color: #3a42cc;
+}
+
+.float-button ul li .insta{
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    box-shadow: 2px 2px 3px #999;
 }
 
-.my-float{
-    margin-top:22px;
+.float-button ul li .whats{
+    background-color: #3fcc3a;
 }
 
-#icon2{
-    width: 81px;
-    height: 81px;
+.float-button ul:hover{
+	visibility:visible!important;
+	opacity:1!important;
+}
+
+
+.float-button .my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+.float-button a#menu-share + ul{
+  visibility: hidden;
+}
+
+.float-button a#menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+.float-button a#menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+.float-button a#menu-share:hover > i{
+	animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
 }
 }
 
@@ -527,17 +807,17 @@ footer p{
 
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     #menu-sm{
@@ -837,27 +1117,167 @@ footer p{
     margin-bottom: 5px;
 }
 
+footer .allicons{
+    display: none;
+}
+
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
 .float{
-    z-index: 99;    
-    position:fixed;
-    width:81px;
-    height:81px;
-    bottom:30px;
-    right:30px;
+	position:fixed;
+	width:85px;
+	height:85px;
+	bottom:40px;
+	right:40px;
+	background-color:rgb(255, 135, 36);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	z-index:1000;
+	animation: bot-to-top 2s ease-out;
+}
+
+.float img{
+    width: 70px;
+    height: 90px;
+}
+
+.float-button ul{
+	position:fixed;
+	right:46px;
+	padding-bottom:30px;
+	bottom:80px;
+	z-index:100;
+}
+
+.float-button ul li{
+	list-style:none;
+	margin-bottom:10px;
+}
+
+.float-button ul li img{
+    width: 55px;
+    height: 55px;
+    margin-top: 6.5px;
+}
+
+.float-button ul li a{
+	
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	width:70px;
+	height:70px;
+	display:block;
+}
+
+.float-button ul li .face{
+    background-color: #3a42cc;
+}
+
+.float-button ul li .insta{
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    box-shadow: 2px 2px 3px #999;
 }
 
-.my-float{
-    margin-top:22px;
+.float-button ul li .whats{
+    background-color: #3fcc3a;
 }
 
-#icon2{
-    width: 81px;
-    height: 81px;
+.float-button ul:hover{
+	visibility:visible!important;
+	opacity:1!important;
+}
+
+
+.float-button .my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+.float-button a#menu-share + ul{
+  visibility: hidden;
+}
+
+.float-button a#menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+.float-button a#menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+.float-button a#menu-share:hover > i{
+	animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
 }
 }
 
@@ -1331,17 +1751,17 @@ footer p{
     
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     body{
         overflow-x: hidden;

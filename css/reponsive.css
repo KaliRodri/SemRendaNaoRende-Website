@@ -15,17 +15,17 @@
 
    @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     header{
@@ -62,7 +62,7 @@
     }
     
     section{
-        background-image: url(fundo2.jpg);
+        background-image: url(/imagens/fundo2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -244,6 +244,10 @@
     color: white;
     text-shadow: 1px 1px 1px black;
     
+}
+
+.bracelet, .colar{
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
 .mid-content .img-content{
@@ -478,7 +482,7 @@ aside .contents{
 
  /*Testemunhos*/
 
- div .testmonials{
+div .testmonials{
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
@@ -497,6 +501,7 @@ div .testmonials .test-images{
     margin-bottom: 5px;
     border-radius: 70px;
     cursor: pointer;
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
 }
 
 .test-images-rating{
@@ -589,27 +594,167 @@ footer p{
     margin-bottom: 5px;
 }
 
+footer .allicons{
+    display: none;
+}
+
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
 .float{
-    z-index: 99;    
-    position:fixed;
-    width:81px;
-    height:81px;
-    bottom:30px;
-    right:30px;
+	position:fixed;
+	width:85px;
+	height:85px;
+	bottom:40px;
+	right:40px;
+	background-color:rgb(255, 135, 36);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	z-index:1000;
+	animation: bot-to-top 2s ease-out;
+}
+
+.float img{
+    width: 70px;
+    height: 90px;
+}
+
+.float-button ul{
+	position:fixed;
+	right:46px;
+	padding-bottom:30px;
+	bottom:80px;
+	z-index:100;
+}
+
+.float-button ul li{
+	list-style:none;
+	margin-bottom:10px;
+}
+
+.float-button ul li img{
+    width: 55px;
+    height: 55px;
+    margin-top: 6.5px;
+}
+
+.float-button ul li a{
+	
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	width:70px;
+	height:70px;
+	display:block;
+}
+
+.float-button ul li .face{
+    background-color: #3a42cc;
+}
+
+.float-button ul li .insta{
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    box-shadow: 2px 2px 3px #999;
 }
 
-.my-float{
-    margin-top:22px;
+.float-button ul li .whats{
+    background-color: #3fcc3a;
 }
 
-#icon2{
-    width: 81px;
-    height: 81px;
+.float-button ul:hover{
+	visibility:visible!important;
+	opacity:1!important;
+}
+
+
+.float-button .my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+.float-button a#menu-share + ul{
+  visibility: hidden;
+}
+
+.float-button a#menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+.float-button a#menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+.float-button a#menu-share:hover > i{
+	animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
 }
 
 }
@@ -631,17 +776,17 @@ footer p{
 
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     header{
@@ -682,7 +827,7 @@ footer p{
     }
     
     section{
-        background-image: url(fundo2.jpg);
+        background-image: url(/imagens/fundo2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -866,6 +1011,10 @@ footer p{
     color: white;
     text-shadow: 1px 1px 1px black;
     
+}
+
+.bracelet, .colar{
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
 .mid-content .img-content{
@@ -1118,6 +1267,7 @@ div .testmonials .test-images{
     margin-bottom: 5px;
     border-radius: 70px;
     cursor: pointer;
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
 }
 
 .test-images-rating{
@@ -1214,27 +1364,166 @@ footer p{
     margin-bottom: 5px;
 }
 
+footer .allicons{
+    display: none;
+}
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
 .float{
-    z-index: 99;    
-    position:fixed;
-    width:85px;
-    height:85px;
-    bottom:30px;
-    right:30px;
+	position:fixed;
+	width:85px;
+	height:85px;
+	bottom:40px;
+	right:40px;
+	background-color:rgb(255, 135, 36);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	z-index:1000;
+	animation: bot-to-top 2s ease-out;
+}
+
+.float img{
+    width: 70px;
+    height: 90px;
+}
+
+.float-button ul{
+	position:fixed;
+	right:46px;
+	padding-bottom:30px;
+	bottom:80px;
+	z-index:100;
+}
+
+.float-button ul li{
+	list-style:none;
+	margin-bottom:10px;
+}
+
+.float-button ul li img{
+    width: 55px;
+    height: 55px;
+    margin-top: 6.5px;
+}
+
+.float-button ul li a{
+	
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	width:70px;
+	height:70px;
+	display:block;
+}
+
+.float-button ul li .face{
+    background-color: #3a42cc;
+}
+
+.float-button ul li .insta{
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    box-shadow: 2px 2px 3px #999;
 }
 
-.my-float{
-    margin-top:22px;
+.float-button ul li .whats{
+    background-color: #3fcc3a;
 }
 
-#icon2{
-    width: 85px;
-    height: 85px;
+.float-button ul:hover{
+	visibility:visible!important;
+	opacity:1!important;
+}
+
+
+.float-button .my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+.float-button a#menu-share + ul{
+  visibility: hidden;
+}
+
+.float-button a#menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+.float-button a#menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+.float-button a#menu-share:hover > i{
+	animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
 }
 
 }
@@ -1251,17 +1540,17 @@ footer p{
 
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     #menu-sm{
@@ -1401,7 +1690,7 @@ footer p{
 }
 
 section{
-    background-image: url(fundo2.jpg);
+    background-image: url(/imagens/fundo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1531,6 +1820,10 @@ main a:hover .arrow{
     text-shadow: 1px 1px 1px black;
     
 }
+ 
+.bracelet, .colar{
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+}
 
 .mid-content .img-content{
     display: inline-flex;
@@ -1539,6 +1832,10 @@ main a:hover .arrow{
 
 .img-content img{
     margin: 50px;
+}
+
+.brinco, .bracelet, .colar{
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
 .mid-content .mid-title{
@@ -1760,6 +2057,7 @@ div .testmonials .test-images{
     margin-bottom: 5px;
     border-radius: 70px;
     cursor: pointer;
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
 }
 
 .test-images-rating{
@@ -1844,22 +2142,166 @@ footer p{
     margin-bottom: 5px;
 }
 
-.float{
-    z-index: 99;    
-    position:fixed;
-    width:85px;
-    height:85px;
-    bottom:30px;
-    right:30px;
-    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    box-shadow: 2px 2px 3px #999;
+footer .allicons{
+    display: none;
 }
 
-.my-float{
-    margin-top:22px;
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.float{
+	position:fixed;
+	width:85px;
+	height:85px;
+	bottom:40px;
+	right:40px;
+	background-color:rgb(255, 135, 36);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	z-index:1000;
+	animation: bot-to-top 2s ease-out;
+}
+
+.float img{
+    width: 70px;
+    height: 90px;
+}
+
+.float-button ul{
+	position:fixed;
+	right:46px;
+	padding-bottom:30px;
+	bottom:80px;
+	z-index:100;
+}
+
+.float-button ul li{
+	list-style:none;
+	margin-bottom:10px;
+}
+
+.float-button ul li img{
+    width: 55px;
+    height: 55px;
+    margin-top: 6.5px;
+}
+
+.float-button ul li a{
+	
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	width:70px;
+	height:70px;
+	display:block;
+}
+
+.float-button ul li .face{
+    background-color: #3a42cc;
+}
+
+.float-button ul li .insta{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.float-button ul li .whats{
+    background-color: #3fcc3a;
+}
+
+.float-button ul:hover{
+	visibility:visible!important;
+	opacity:1!important;
+}
+
+
+.float-button .my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+.float-button a#menu-share + ul{
+  visibility: hidden;
+}
+
+.float-button a#menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+.float-button a#menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+.float-button a#menu-share:hover > i{
+	animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
 } 
         
 }
@@ -1876,17 +2318,17 @@ footer p{
     
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     body{
@@ -2460,6 +2902,7 @@ footer p{
         margin-bottom: 5px;
         border-radius: 70px;
         cursor: pointer;
+        filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
     }
     
     .test-images-rating{
@@ -2561,17 +3004,17 @@ footer p{
     
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     body{
         overflow-x: hidden;
@@ -2708,7 +3151,7 @@ footer p{
     }
     
     section{
-        background-image: url(fundo2.jpg);
+        background-image: url(/imagens/fundo2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -2773,7 +3216,6 @@ footer p{
     }
     
    
-    
     main .line{
         margin-top: -100px;
     }
@@ -2861,6 +3303,10 @@ footer p{
         
     }
     
+    .brinco, .bracelet, .colar{
+        filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+    }
+
     .mid-content .img-content{
         display: inline-flex;
         margin: auto;
@@ -2931,7 +3377,10 @@ footer p{
     }
     
 
+.content1 #delivery1, .content1 #delivery2, .content2 #blink2, .content2 #blink1, .content3 #neck1, .content3 #neck2{
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
 
+}
 
 .content1 #delivery1{
     display: block;
@@ -3168,12 +3617,14 @@ footer p{
         margin-bottom: 5px;
         border-radius: 70px;
         cursor: pointer;
+        filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
     }
     
     .test-images-rating{
         margin-top: -30px;
         width: 20px;
         height: 20px;
+        
     }
 
     .test-frase{
