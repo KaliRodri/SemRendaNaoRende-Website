@@ -15,17 +15,17 @@
 
     @font-face {
         font-family: Baumans;
-        src: url(/fonts/Baumans/Baumans-Regular.ttf);
+        src: url(Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(/fonts/Roboto/Roboto-Bold.ttf);
+        src: url(Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
+        src: url(Montserrat-Light.ttf);
     }
     
     header{
@@ -89,7 +89,7 @@
     }
     
     section{
-        background-image: url(/imagens/fundo4.png);
+        background-image: url(fundo4.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -851,17 +851,17 @@ footer .allicons{
 
     @font-face {
         font-family: Baumans;
-        src: url(/fonts/Baumans/Baumans-Regular.ttf);
+        src: url(Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(/fonts/Roboto/Roboto-Bold.ttf);
+        src: url(Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
+        src: url(Montserrat-Light.ttf);
     }
     
     header{
@@ -929,7 +929,7 @@ footer .allicons{
     }
     
     section{
-        background-image: url(/imagens/fundo4.png);
+        background-image: url(fundo4.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1680,17 +1680,17 @@ footer .allicons{
 
     @font-face {
         font-family: Baumans;
-        src: url(/fonts/Baumans/Baumans-Regular.ttf);
+        src: url(Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(/fonts/Roboto/Roboto-Bold.ttf);
+        src: url(Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
+        src: url(Montserrat-Light.ttf);
     }
     
     #menu-sm{
@@ -1862,7 +1862,7 @@ footer .allicons{
 }
 
 section{
-    background-image: url(/imagens/fundo4.png);
+    background-image: url(fundo4.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2583,17 +2583,17 @@ footer .allicons{
     
     @font-face {
         font-family: Baumans;
-        src: url(/fonts/Baumans/Baumans-Regular.ttf);
+        src: url(Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(/fonts/Roboto/Roboto-Bold.ttf);
+        src: url(Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
+        src: url(Montserrat-Light.ttf);
     }
     
     body{
@@ -2737,7 +2737,7 @@ footer .allicons{
     }
     
     section{
-        background-image: url(/imagens/fundo4.png);
+        background-image: url(fundo4.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -3396,18 +3396,19 @@ footer .allicons{
     
     @font-face {
         font-family: Baumans;
-        src: url(/fonts/Baumans/Baumans-Regular.ttf);
+        src: url(Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(/fonts/Roboto/Roboto-Bold.ttf);
+        src: url(Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
+        src: url(Montserrat-Light.ttf);
     }
+	
     body{
         overflow-x: hidden;
     }
@@ -3555,7 +3556,7 @@ footer .allicons{
     }
     
     section{
-        background-image: url(/imagens/fundo4.png);
+        background-image: url(fundo4.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
