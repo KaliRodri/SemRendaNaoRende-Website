@@ -13,26 +13,26 @@
         font-size: 26px;
     }
 
-   @font-face {
+    @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     header{
         display: flex;
         width: 600px;
         height: 60px;
-        background: linear-gradient(rgb(255, 0, 179,1), rgba(255, 129, 129, 1));
+        background: linear-gradient(#AA11FF,#5A12FF);
         z-index: 2;
         
         position: fixed;
@@ -49,6 +49,33 @@
        
     }
 
+    #offcanvasRight{
+        background-color: #AA11FF;
+        color: white;
+        font-size: 1.8em;
+    }
+
+    #offcanvasRight ul{
+        list-style: none;
+    }
+
+    #offcanvasRight ul li a{
+        display: block;
+        text-decoration: none;
+        background: none;
+        color: white;
+        padding-top: 15px;
+    }
+
+    #offcanvasRight ul li a:active{
+        border: none;
+        border-bottom: solid 1px white;
+    }
+
+    #offcanvasRightLabel{
+       font-size: 1.5em;
+    }
+
     .menu1, .menu2{
         display: none;
     }
@@ -62,7 +89,7 @@
     }
     
     section{
-        background-image: url(fundo2.jpg);
+        background-image: url(/imagens/fundo4.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -84,14 +111,65 @@
     
     main .welcome{
         font-family: Baumans, sans-serif;
-        margin-top: -20px;
-        color: rgb(253, 177, 54);
-        font-size: 3.7em;
-        text-shadow: 1px 2px 10px black;
-        font-weight: lighter;
+        margin-top: -40px;
+        color: white;
+        font-size: 4.8em;
+        text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
+        font-weight: bold;
         padding-left: 30px;
+        font-weight: lighter;
     }
     
+    @keyframes move {
+        
+        from{
+            transform: translate(-40px,-115px);
+            opacity: 0;
+        }
+
+        to{
+            transform: translate(0,-115px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes move-sigla {
+        from{
+            transform: translate(-10px, 0);
+            color: #1EF2A6
+        }
+
+        to{
+            transform: translate(-260px,0);
+            color: white;;
+            
+        }
+    }
+    
+    main p .sigla{
+        display: inline-block;
+        animation-name: move-sigla;
+        animation-duration: 2s;
+        animation-direction: normal;
+        animation-delay:2.3s;
+        animation-fill-mode: forwards;
+        transform: translate(-10px, 0);
+        color: #1EF2A6
+        
+    
+    }
+
+    main p .em{
+        display: inline-block;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-direction: normal;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        transform: translate(-40px,-115px);
+        opacity: 0;
+    }
+
     main .welcome-Text{
         color: rgb(255, 255, 255);
         margin: auto;
@@ -137,9 +215,11 @@
     }
     
     main .lotus{
-        margin-bottom: 5px;
+        margin-bottom: -3px;
         margin-left: 15px;
         margin-top: -50px;
+        width: 110px;
+        height: 110px;
         
     }
     
@@ -158,7 +238,7 @@
         text-decoration: none;
         display: inline-flex;
         justify-content: space-around;
-        background: linear-gradient( 80deg, rgb(253, 177, 54), rgb(227, 245, 243));
+        background: linear-gradient(125deg, rgb(90, 18, 255)30%,#AA11FF);
         padding: 5px;
         border-radius: 8px;
         color: white;
@@ -169,7 +249,7 @@
         flex-direction: column;
         font-size: 1.3em;
         margin: auto;
-        margin-top: 5px;
+        margin-top: -65px;
     }
     
     main a .arrow{
@@ -190,59 +270,18 @@
     .container{
         margin-bottom: 150px;
     }
-    
-    .mid-content{
-    display: inline-flex;
-    flex-direction: column;
-    height: 500px;
-    background-color: rgb(253, 177, 54);
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    }
 
-.mid-content .img-content{
-    display: inline-flex;
-    margin: auto;
-}
-
-.img-content img{
-    margin: 50px;
-}
-
-.mid-content .mid-title{
-    font-family: Baumans, sans-serif;
-    text-align: center;
-    display: inline-block;
-    font-size: 2.8em;
-    margin-top: 60px;
-}
-
-.mid-content .mid-title-text1{
-    display: inline-block;
-    margin-bottom: 50px;
-    text-align: center;
-    width: 60%;
-    font-size: 1.2em;
-    font-family: Montserrat, sans-serif;
-}
-
-.mid-content p{
-    margin: auto;
-    width: 80%;
-    font-family: Montserrat, sans-serif;
-    
-}
 
 /*Segundo Conteúdo*/
 
 .mid-content{
-    width: 600px;
     display: inline-flex;
     flex-direction: column;
     height: 700px;
-    background-color: rgb(253, 177, 54);
+    background:linear-gradient(#5A12FF, #BC10FE);
     color: white;
     text-shadow: 1px 1px 1px black;
+    width: 600px;
     
 }
 
@@ -298,8 +337,11 @@
 aside{
     display: flex;
     flex-direction: column;
-    margin: auto;
+    justify-content: space-between;
     width: 600px;
+    background:linear-gradient(#BC10FE,rgb(88, 17, 255,0) ) ;
+    height: auto;
+    margin-top: -1px;
 }
 
 aside img{
@@ -313,7 +355,7 @@ aside .titlebox{
 
 aside .title{
     font-family: Baumans, sans-serif;
-    color: rgb(255, 0, 179);
+    color: rgb(255, 255, 255);
     margin: auto;
     font-size: 3em;
     margin-top: 50px;
@@ -442,11 +484,12 @@ aside .contents{
     margin-top: 180px;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 400px;
     background-color: rgb(248, 248, 248);
     margin-bottom: 50px;
     box-shadow: 1px 1px 20px black;
     width: 600px;
+   
     
 }
 
@@ -484,47 +527,74 @@ aside .contents{
 
 div .testmonials{
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     text-align: center;
     color: black;
     text-shadow: 1px 1px 1px rgba(126, 126, 126, 0.212);
-    background-color: rgb(255, 255, 255);
+   
     margin-top: 20px;
+    width: 100%;
+    
+}
+
+.item{
+    margin: auto;
+    width: 200px;
+    
     
 }
 
 div .testmonials .test-images{
-    width: 75px;
-    height: 75px;
+    height: 200px;
     margin-top: 20px;
     margin-bottom: 5px;
-    border-radius: 70px;
+    border-radius: 100px;
     cursor: pointer;
     filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
+   
+    
 }
 
-.test-images-rating{
-    margin-top: -30px;
-    width: 20px;
-    height: 20px;
+.testimonies-Container p{
+    font-size: 1.4em;
+    width: 100%;
 }
 
-.test-frase{
-    margin-top: -25px;
-    margin-bottom: 50px;
+.star{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top:40px ;
+    margin-bottom: 30px;
+    
+}
+
+.star img{
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(1px 1px 5px rgb(236, 214, 11));
+}
+
+.testimonies-Container .test-frase{
+    display: block;
+    margin-left: -70px;
+    font-size: 2em;
+    width: 180%;
 }
 
 h2, h1{
+    color: rgb(255, 0, 179);
     text-align: center;
+    
 }
-
+ 
 h1{
-    padding-top: 30px;
+    padding-top: 80px;
 }
 
 h2{
-    padding-top: 20px;
+    padding-top: 50px;
     width: 80%;
     margin: auto;
 }
@@ -533,13 +603,17 @@ h2{
 /*Rodapé*/
 
 footer{
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: auto;
-    width: 90%;   
+    width: 100%;   
     font-family: Montserrat, sans-serif;
-    width: 600px;
-    margin-top: 1050px;
+    margin-top: 100px;
+    background-image: url(/imagens/fundo4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -5px;
+    padding-top:40px ;
 }
 
 footer .logofooter{
@@ -653,7 +727,7 @@ footer .allicons{
 	height:85px;
 	bottom:40px;
 	right:40px;
-	background-color:rgb(255, 135, 36);
+	background-color:rgb(166, 11, 197);
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
@@ -737,6 +811,7 @@ footer .allicons{
 	animation: rotate-out 0.5s;
 }
 
+
 @keyframes bot-to-top {
     0%   {bottom:-40px}
     50%  {bottom:40px}
@@ -776,26 +851,26 @@ footer .allicons{
 
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     header{
         display: flex;
         width: 100%;
         height: 60px;
-        background: linear-gradient(rgb(255, 0, 179,1), rgba(255, 129, 129, 1));
+        background: linear-gradient(#AA11FF,#5A12FF);
         z-index: 2;
-        
+    
         position: fixed;
     }
     
@@ -810,6 +885,33 @@ footer .allicons{
        justify-content: start;
        margin-top: -98px;
        
+    }
+
+    #offcanvasRight{
+        background-color: #AA11FF;
+        color: white;
+        font-size: 1.8em;
+    }
+
+    #offcanvasRight ul{
+        list-style: none;
+    }
+
+    #offcanvasRight ul li a{
+        display: block;
+        text-decoration: none;
+        background: none;
+        color: white;
+        padding-top: 15px;
+    }
+
+    #offcanvasRight ul li a:active{
+        border: none;
+        border-bottom: solid 1px white;
+    }
+
+    #offcanvasRightLabel{
+       font-size: 1.5em;
     }
 
     .menu1, .menu2{
@@ -827,7 +929,7 @@ footer .allicons{
     }
     
     section{
-        background-image: url(fundo2.jpg);
+        background-image: url(/imagens/fundo4.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -848,17 +950,68 @@ footer .allicons{
     
     main .welcome{
         font-family: Baumans, sans-serif;
-        margin-top: -55px;
-        color: rgb(253, 177, 54);
-        font-size: 4.5em;
+        margin-top: -83px;
+        color: white;
+        font-size: 4.8em;
         text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
         font-weight: lighter;
         padding-left: 30px;
     }
     
+    @keyframes move {
+        
+        from{
+            transform: translate(-40px,-115px);
+            opacity: 0;
+        }
+
+        to{
+            transform: translate(0,-115px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes move-sigla {
+        from{
+            transform: translate(-20px, 0);
+            color: #1EF2A6
+        }
+
+        to{
+            transform: translate(-260px,0);
+            color: white;;
+            
+        }
+    }
+    
+    main p .sigla{
+        display: inline-block;
+        animation-name: move-sigla;
+        animation-duration: 2s;
+        animation-direction: normal;
+        animation-delay:2.3s;
+        animation-fill-mode: forwards;
+        transform: translate(-20px, 0);
+        color: #1EF2A6
+        
+    
+    }
+
+    main p .em{
+        display: inline-block;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-direction: normal;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        transform: translate(-40px,-115px);
+        opacity: 0;
+    }
+
     .lotus{
         margin-left: 20px;
         margin-top: -50px ;
+
     }
 
     main .welcome-Text{
@@ -907,6 +1060,8 @@ footer .allicons{
     main .lotus{
         margin-bottom: 35px;
         margin-right: 25px;
+        width: 110px;
+        height: 110px;
     }
     
     main .line{
@@ -924,18 +1079,17 @@ footer .allicons{
         text-decoration: none;
         display: inline-flex;
         justify-content: space-around;
-        background: linear-gradient( 80deg, rgb(253, 177, 54), rgb(227, 245, 243));
+        background: linear-gradient(125deg, rgb(90, 18, 255)30%,#AA11FF);
         padding: 5px;
         border-radius: 8px;
         color: white;
         border: 0.5px solid white;
         box-shadow: 0.8px 0.8px 1px black;
-        margin-top: 18px;
         display: flex;
         flex-direction: column;
         font-size: 1.3em;
         margin: auto;
-        margin-top: 5px;
+        margin-top: -65px;
     }
     
     main a .arrow{
@@ -957,48 +1111,6 @@ footer .allicons{
         margin-bottom: 150px;
     }
     
-     .mid-content{
-    display: inline-flex;
-    flex-direction: column;
-    height: 500px;
-    background-color: rgb(253, 177, 54);
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    
-}
-
-.mid-content .img-content{
-    display: inline-flex;
-    margin: auto;
-}
-
-.img-content img{
-    margin: 50px;
-}
-
-.mid-content .mid-title{
-    font-family: Baumans, sans-serif;
-    text-align: center;
-    display: inline-block;
-    font-size: 2.8em;
-    margin-top: 60px;
-}
-
-.mid-content .mid-title-text1{
-    display: inline-block;
-    margin-bottom: 50px;
-    text-align: center;
-    width: 60%;
-    font-size: 1.2em;
-    font-family: Montserrat, sans-serif;
-}
-
-.mid-content p{
-    margin: auto;
-    width: 80%;
-    font-family: Montserrat, sans-serif;
-    
-}
 
 /*Segundo Conteúdo*/
 
@@ -1007,7 +1119,7 @@ footer .allicons{
     display: inline-flex;
     flex-direction: column;
     height: 720px;
-    background-color: rgb(253, 177, 54);
+    background:linear-gradient(#5A12FF, #BC10FE);
     color: white;
     text-shadow: 1px 1px 1px black;
     
@@ -1066,6 +1178,7 @@ aside{
     display: flex;
     flex-direction: column;
     margin: auto;
+    background:linear-gradient(#BC10FE,rgb(88, 17, 255,0)) ;
     width: 600px;
 }
 
@@ -1080,7 +1193,7 @@ aside .titlebox{
 
 aside .title{
     font-family: Baumans, sans-serif;
-    color: rgb(255, 0, 179);
+    color: rgb(255, 255, 255);
     margin: auto;
     font-size: 3em;
     margin-top: 50px;
@@ -1206,7 +1319,7 @@ aside .contents{
     margin-top: 180px;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 300px;
     background-color: rgb(248, 248, 248);
     margin-bottom: 50px;
     box-shadow: 1px 1px 20px black;
@@ -1248,49 +1361,76 @@ aside .contents{
 
  /*Testemunhos*/
 
- div .testmonials{
+div .testmonials{
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     text-align: center;
     color: black;
     text-shadow: 1px 1px 1px rgba(126, 126, 126, 0.212);
-    background-color: rgb(255, 255, 255);
+   
     margin-top: 20px;
+    width: 100%;
+    
+}
+
+.item{
+    margin: auto;
+    width: 200px;
+    
     
 }
 
 div .testmonials .test-images{
-    width: 75px;
-    height: 75px;
+    height: 200px;
     margin-top: 20px;
     margin-bottom: 5px;
-    border-radius: 70px;
+    border-radius: 100px;
     cursor: pointer;
     filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
+   
+    
 }
 
-.test-images-rating{
-    margin-top: -30px;
-    width: 20px;
-    height: 20px;
+.testimonies-Container p{
+    font-size: 1.4em;
+    width: 100%;
 }
 
-.test-frase{
-    margin-top: -25px;
-    margin-bottom: 50px;
+.star{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top:40px ;
+    margin-bottom: 30px;
+    
+}
+
+.star img{
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(1px 1px 5px rgb(236, 214, 11));
+}
+
+.testimonies-Container .test-frase{
+    display: block;
+    margin-left: -70px;
+    font-size: 2em;
+    width: 180%;
 }
 
 h2, h1{
+    color: rgb(255, 0, 179);
     text-align: center;
+    
 }
-
+ 
 h1{
-    padding-top: 30px;
+    padding-top: 80px;
 }
 
 h2{
-    padding-top: 20px;
+    padding-top: 50px;
     width: 80%;
     margin: auto;
 }
@@ -1299,12 +1439,17 @@ h2{
 /*Rodapé*/
 
 footer{
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: auto;
-    width: 90%;   
+    width: 100%;   
     font-family: Montserrat, sans-serif;
-    margin-top: 1100px;
+    margin-top: 100px;
+    background-image: url(/imagens/fundo4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -5px;
+    padding-top:40px ;
 }
 
 footer .logofooter{
@@ -1312,33 +1457,28 @@ footer .logofooter{
 }
 
 footer .icon{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-bottom: 10px;
 }
 
 
 footer .allicons{
-    width: 500px;
+    width: 450px;
     margin: auto;
     display: flex;
     justify-content: space-around;
+}
+
+.instaicon{
+    display: none;
 }
 
 .allicons .face, .whats, .maps, .instaicon{
     cursor: pointer;
 }
 
-.instaicon{
-    display: none;
-}
-#icon2{
-    width: 70px;
-    height: 84px;
-}
-
 .allicons .face p, .whats p, .maps p, .instaicon p{
-    font-size: 0.9em;
     opacity: 0;
     height: 0;
     overflow: hidden;
@@ -1422,7 +1562,7 @@ footer .allicons{
 	height:85px;
 	bottom:40px;
 	right:40px;
-	background-color:rgb(255, 135, 36);
+	background-color:rgb(166, 11, 197);
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
@@ -1540,17 +1680,17 @@ footer .allicons{
 
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     #menu-sm{
@@ -1561,11 +1701,38 @@ footer .allicons{
         display: flex;
         width: 100%;
         height: 60px;
-        background: linear-gradient(rgb(255, 0, 179,1), rgba(255, 129, 129, 1));
+        background: linear-gradient(#AA11FF,#5A12FF);
         justify-content: space-between;
         z-index: 2;
         
         position: sticky;
+    }
+
+    #offcanvasRight{
+        background-color: #AA11FF;
+        color: white;
+        font-size: 1.8em;
+    }
+
+    #offcanvasRight ul{
+        list-style: none;
+    }
+
+    #offcanvasRight ul li a{
+        display: block;
+        text-decoration: none;
+        background: none;
+        color: white;
+        padding-top: 15px;
+    }
+
+    #offcanvasRight ul li a:active{
+        border: none;
+        border-bottom: solid 1px white;
+    }
+
+    #offcanvasRightLabel{
+       font-size: 1.5em;
     }
     
     #who-Are{
@@ -1638,6 +1805,11 @@ footer .allicons{
         background-color: transparent;
         border: none;
     }
+
+    #menu-ssm img{
+        width: 40px;
+        height: 40px;
+    }
     
     .logo a{
         border: none;
@@ -1690,7 +1862,7 @@ footer .allicons{
 }
 
 section{
-    background-image: url(fundo2.jpg);
+    background-image: url(/imagens/fundo4.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1711,12 +1883,62 @@ section{
 
 main .welcome{
     font-family: Baumans, sans-serif;
-    margin-top: -70px;
-    color: rgb(253, 177, 54);
-    font-size: 5em;
+    margin-top: -117px;
+    color: white;
+    font-size: 6em;
     text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
     font-weight: lighter;
     padding-left: 30px;
+}
+
+@keyframes move {
+        
+    from{
+        transform: translate(-40px,-115px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translate(0,-115px);
+        opacity: 1;
+    }
+}
+
+@keyframes move-sigla {
+    from{
+        transform: translate(-20px, 30px);
+        color: #1EF2A6
+    }
+
+    to{
+        transform: translate(-320px,30px);
+        color: white;;
+        
+    }
+}
+
+main p .sigla{
+    display: inline-block;
+    animation-name: move-sigla;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-delay:2.3s;
+    animation-fill-mode: forwards;
+    transform: translate(-20px, 30px);
+    color: #1EF2A6
+    
+
+}
+
+main p .em{
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    transform: translate(-40px,-115px);
+    opacity: 0;
 }
 
 
@@ -1776,7 +1998,7 @@ main a{
     text-decoration: none;
     display: inline-flex;
     justify-content: space-around;
-    background: linear-gradient(125deg, rgb(253, 177, 54)20%, rgb(255, 255, 255));
+    background: linear-gradient(125deg, rgb(90, 18, 255)30%,#AA11FF);
     padding: 5px;
     border-radius: 8px;
     color: white;
@@ -1787,6 +2009,7 @@ main a{
     flex-direction: column;
     font-size: 1.3em;
     margin: auto;
+    margin-top: -115px;
     
 }
 
@@ -1815,7 +2038,7 @@ main a:hover .arrow{
     display: inline-flex;
     flex-direction: column;
     height: 570px;
-    background-color: rgb(253, 177, 54);
+    background:linear-gradient(#5A12FF, #BC10FE);
     color: white;
     text-shadow: 1px 1px 1px black;
     
@@ -1868,8 +2091,11 @@ main a:hover .arrow{
 /*Aside Conteúdo*/
 
 aside{
+    margin-top: -1px;
     display: flex;
     flex-direction: column;
+    background:linear-gradient(#BC10FE,rgb(88, 17, 255,0)) ;
+    width: 100%;
 }
 
 aside img{
@@ -1878,7 +2104,7 @@ aside img{
 
 aside .title{
     font-family: Baumans, sans-serif;
-    color: rgb(255, 0, 179);
+    color: rgb(255, 255, 255);
     margin: auto;
     text-align: center;
     font-size: 3em;
@@ -1889,7 +2115,7 @@ aside .title{
 aside .contents{
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 75%;
     margin: auto;
 }
 
@@ -1997,7 +2223,7 @@ aside .contents{
     margin-top: 180px;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 300px;
     background-color: rgb(248, 248, 248);
     margin-bottom: 50px;
     box-shadow: 1px 1px 20px black;
@@ -2040,58 +2266,93 @@ aside .contents{
 
 div .testmonials{
     display: inline-flex;
-    justify-content: space-around;
     flex-direction: row;
+    justify-content: space-around;
     text-align: center;
     color: black;
     text-shadow: 1px 1px 1px rgba(126, 126, 126, 0.212);
-    background-color: rgb(255, 255, 255);
+   
     margin-top: 20px;
+    width: 100%;
+    
+}
+
+.item{
+    margin: auto;
+    width: 200px;
+    
     
 }
 
 div .testmonials .test-images{
-    width: 75px;
-    height: 75px;
+    height: 200px;
     margin-top: 20px;
     margin-bottom: 5px;
-    border-radius: 70px;
+    border-radius: 100px;
     cursor: pointer;
     filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
+   
+    
 }
 
-.test-images-rating{
-    margin-top: -30px;
-    width: 20px;
-    height: 20px;
+.testimonies-Container p{
+    font-size: 1.4em;
+    width: 100%;
 }
 
-.test-frase{
-    margin-top: -25px;
-    margin-bottom: 50px;
+.star{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top:40px ;
+    margin-bottom: 30px;
+    
+}
+
+.star img{
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(1px 1px 5px rgb(236, 214, 11));
+}
+
+.testimonies-Container .test-frase{
+    display: block;
+    margin-left: -70px;
+    font-size: 2em;
+    width: 180%;
 }
 
 h2, h1{
+    color: rgb(255, 0, 179);
     text-align: center;
+    
 }
-
+ 
 h1{
-    padding-top: 30px;
+    padding-top: 80px;
 }
 
 h2{
-    padding-top: 20px;
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+    font-size: 1em;
 }
 
 /*Rodapé*/
 
 footer{
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: auto;
-    width: 90%;   
+    width: 100%;   
     font-family: Montserrat, sans-serif;
-    margin-top: 350px;
+    margin-top: 100px;
+    background-image: url(/imagens/fundo4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -5px;
+    padding-top:40px ;
 }
 
 footer .logofooter{
@@ -2099,17 +2360,21 @@ footer .logofooter{
 }
 
 footer .icon{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-bottom: 10px;
 }
 
 
 footer .allicons{
-    width: 500px;
+    width: 450px;
     margin: auto;
     display: flex;
     justify-content: space-around;
+}
+
+.instaicon{
+    display: none;
 }
 
 .allicons .face, .whats, .maps, .instaicon{
@@ -2136,8 +2401,8 @@ footer img{
 }
 
 footer p{
-    font-size: 0.85em;
-    width: 100%;
+    font-size: 0.7em;
+    width: 80%;
     margin: auto;
     margin-bottom: 5px;
 }
@@ -2200,7 +2465,7 @@ footer .allicons{
 	height:85px;
 	bottom:40px;
 	right:40px;
-	background-color:rgb(255, 135, 36);
+	background-color:rgb(166, 11, 197);
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
@@ -2318,17 +2583,17 @@ footer .allicons{
     
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     
     body{
@@ -2345,13 +2610,14 @@ footer .allicons{
     
     header{
         display: flex;
-        width: 104%;
         height: 60px;
-        background: linear-gradient(rgb(255, 0, 179,1), rgba(255, 129, 129, 1));
+        
+        background: linear-gradient(#AA11FF,#5A12FF);
         justify-content: space-between;
         z-index: 2;
-        
+        border: none;
         position: sticky;
+        width: 104%;
     }
     
     #who-Are{
@@ -2471,7 +2737,7 @@ footer .allicons{
     }
     
     section{
-        background-image: url(fundo2.jpg);
+        background-image: url(/imagens/fundo4.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -2489,25 +2755,74 @@ footer .allicons{
         height: 470px;
         
     }
+     
+    @keyframes move {
+        
+        from{
+            transform: translate(-40px,-119px);
+            opacity: 0;
+        }
+
+        to{
+            transform: translate(0,-119px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes move-sigla {
+        from{
+            transform: translate(-15px,21px);
+            color: #1EF2A6
+        }
+
+        to{
+            transform: translate(-460px,21px);
+            color: white;;
+            
+        }
+    }
     
+    main p .sigla{
+        display: inline-block;
+        animation-name: move-sigla;
+        animation-duration: 2s;
+        animation-direction: normal;
+        animation-delay:2.3s;
+        animation-fill-mode: forwards;
+        transform: translate(-15px,21px);
+        color: #1EF2A6
+        
+    
+    }
+
+    main p .em{
+        display: inline-block;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-direction: normal;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        transform: translate(-40px,-119px);
+        opacity: 0;
+    }
+
+    main .lotus{
+        margin: auto;
+        display: block;
+        width: 100%;
+        height: 100px;
+        margin-top: -50px;
+        padding-right:28px;
+        margin-bottom: 45px;
+        
+        
+    }
     
     main .welcome{
-        font-family: Baumans, sans-serif;
-        margin-top: -80px;
-        color: rgb(253, 177, 54);
-        font-size: 5em;
-        text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
+        margin-bottom: -80px;
         
-        padding-left: 30px;
-        font-weight: lighter;
     }
-    
-    .lotus{
-        margin-left: 20px;
-        
-       
-    }
-    
+
     main .welcome-Text{
         color: rgb(255, 255, 255);
         margin: auto;
@@ -2578,7 +2893,7 @@ footer .allicons{
         text-decoration: none;
         display: inline-flex;
         justify-content: space-around;
-        background: linear-gradient(125deg, rgb(253, 177, 54)20%, rgb(255, 255, 255));
+        background: linear-gradient(125deg, rgb(90, 18, 255)30%,#AA11FF);
         padding: 5px;
         border-radius: 8px;
         color: white;
@@ -2618,7 +2933,7 @@ footer .allicons{
         display: inline-flex;
         flex-direction: column;
         height: 550px;
-        background-color: rgb(253, 177, 54);
+        background:linear-gradient(#5A12FF, #BC10FE);
         color: white;
         text-shadow: 1px 1px 1px black;
         width: 104%;
@@ -2671,6 +2986,7 @@ footer .allicons{
         display: flex;
         flex-direction: column;
         height: 500px;
+        width: 104%;
         
     }
     
@@ -2680,7 +2996,7 @@ footer .allicons{
     
     aside .title{
         font-family: Baumans, sans-serif;
-        color: rgb(255, 0, 179);
+        color: white;
         margin: auto;
         text-align: center;
         font-size: 3em;
@@ -2691,8 +3007,8 @@ footer .allicons{
     aside .contents{
         display: flex;
         flex-direction: row;
-        width: 100%;
-        margin: auto;
+        justify-content: space-around;
+        width: 65%;
     }
     
     .contents .content1, .content2, .content3{
@@ -2802,7 +3118,7 @@ footer .allicons{
         margin-top: 180px;
         display: flex;
         flex-direction: column;
-        height: 800px;
+        height: 400px;
         background-color: rgb(248, 248, 248);
         margin-bottom: 50px;
         box-shadow: 1px 1px 20px black;
@@ -2882,57 +3198,95 @@ footer .allicons{
 
      /*Testemunhos*/
 
-    div .testmonials{
+     div .testmonials{
         display: inline-flex;
+        flex-direction: row;
         justify-content: space-around;
         text-align: center;
         color: black;
         text-shadow: 1px 1px 1px rgba(126, 126, 126, 0.212);
-        background-color: rgb(255, 255, 255);
+       
         margin-top: 20px;
-        flex-direction: row;
-        width: 104%;
+        width: 100%;
         
     }
-
-    div .testmonials .test-images{
-        width: 75px;
-        height: 75px;
-        margin-top: 20px;
-        margin-bottom: 5px;
-        border-radius: 70px;
-        cursor: pointer;
-        filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
+    
+    .item{
+        margin: auto;
+        width: 200px;
+        
+        
     }
     
-    .test-images-rating{
-        margin-top: -30px;
-        width: 20px;
-        height: 20px;
+    div .testmonials .test-images{
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        border-radius: 100px;
+        cursor: pointer;
+        filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
+       
+        
     }
-
-    .test-frase{
-        margin-top: -25px;
-        margin-bottom: 50px;
+    
+    .testimonies-Container p{
+        font-size: 1.4em;
+        width: 100%;
+    }
+    
+    .star{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top:40px ;
+        margin-bottom: 30px;
+        
+    }
+    
+    .star img{
+        width: 30px;
+        height: 30px;
+        filter: drop-shadow(1px 1px 5px rgb(236, 214, 11));
+    }
+    
+    .testimonies-Container .test-frase{
+        display: block;
+        margin-left: -70px;
+        font-size: 2em;
+        width: 180%;
     }
     
     h2, h1{
+        color: rgb(255, 0, 179);
         text-align: center;
+        
+    }
+     
+    h1{
+        padding-top: 80px;
     }
     
     h2{
         padding-top: 50px;
+        width: 80%;
+        margin: auto;
+        font-size: 1em;
     }
 
     /*Rodapé*/
     
     footer{
-        color: black;
+        color: rgb(255, 255, 255);
         text-align: center;
         margin: auto;
         width: 104%;   
         font-family: Montserrat, sans-serif;
-        margin-top: 550px;
+        margin-top: 100px;
+        background-image: url(/imagens/fundo4.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: -5px;
+        padding-top:40px ;
     }
     
     footer .logofooter{
@@ -2940,17 +3294,55 @@ footer .allicons{
     }
     
     footer .icon{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         margin-bottom: 10px;
     }
     
     
     footer .allicons{
-        width: 550px;
+        width: 450px;
         margin: auto;
         display: flex;
         justify-content: space-around;
+    }
+    
+    .instaicon{
+        display: none;
+    }
+    
+    .allicons .face, .whats, .maps, .instaicon{
+        cursor: pointer;
+    }
+    
+    .allicons .face p, .whats p, .maps p, .instaicon p{
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .allicons .face:hover p, .whats:hover p, .maps:hover p, .instaicon:hover p{
+        opacity: 1;
+        height: 20px;
+        transition: all 0.2s ease-out
+    }
+    
+    footer img{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    footer p{
+        font-size: 0.7em;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    
+    footer .allicons{
+        display: none;
     }
     
     .allicons .face, .whats, .maps, .instaicon{
@@ -3004,17 +3396,17 @@ footer .allicons{
     
     @font-face {
         font-family: Baumans;
-        src: url(Baumans-Regular.ttf);
+        src: url(/fonts/Baumans/Baumans-Regular.ttf);
     }
     
     @font-face {
         font-family: Roboto;
-        src: url(Roboto-Bold.ttf);
+        src: url(/fonts/Roboto/Roboto-Bold.ttf);
     }
     
     @font-face {
         font-family: Montserrat;
-        src: url(Montserrat-Light.ttf);
+        src: url(/fonts/Montserrat/Montserrat-Light.ttf);
     }
     body{
         overflow-x: hidden;
@@ -3030,7 +3422,7 @@ footer .allicons{
         display: flex;
         height: 60px;
         
-        background: linear-gradient(rgb(255, 0, 179,1), rgba(255, 129, 129, 1));
+        background: linear-gradient(#AA11FF,#5A12FF);
         justify-content: space-between;
         z-index: 2;
         border: none;
@@ -3086,7 +3478,7 @@ footer .allicons{
         background: none;
         border: none;
         padding: 1px;
-        border-bottom: 2.5px solid rgb(245, 205, 94);
+        border-bottom: 2.5px solid rgb(139, 94, 245);
     }
 
     #who-Are{
@@ -3106,6 +3498,7 @@ footer .allicons{
     .menu1{
         z-index: 99;
     }
+
     header .logo a:hover{
         padding: 0;
         border: none;
@@ -3120,7 +3513,7 @@ footer .allicons{
     header .menu2 #heart2{
         display: none;
     }
-
+    
     .menu2 button{
         border: none;
         color: white;
@@ -3141,7 +3534,18 @@ footer .allicons{
         list-style: none;
         color: white;
     }
+
+    .offcanvas-header ul li a{
+        font-size: 0.9em;
+    }
+
+    .offcanvas-header ul li a:hover{
+        border-bottom: solid 1px white;
+    }
     
+    #offcanvasRight{
+        width: 210px;
+    }
     /*Primeiro Conteúdo*/
     
     .container{
@@ -3151,7 +3555,7 @@ footer .allicons{
     }
     
     section{
-        background-image: url(fundo2.jpg);
+        background-image: url(/imagens/fundo4.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -3173,21 +3577,76 @@ footer .allicons{
     
     main .welcome{
         font-family: Baumans, sans-serif;
-        margin-top: -80px;
-        color: rgb(253, 177, 54);
-        font-size: 5.5em;
+        margin-top: -97px;
+        color: white;
+        font-size: 6em;
         text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
         font-weight: bold;
         padding-left: 30px;
         font-weight: lighter;
+        margin-bottom: 0;
         
     }
+
+    @keyframes move {
+        
+        from{
+            transform: translate(-40px,0);
+            opacity: 0;
+        }
+
+        to{
+            transform: translate(0,0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes move-sigla {
+        from{
+            transform: translate(403px, 0);
+            color: #1EF2A6
+        }
+
+        to{
+            transform: translate(0,0);
+            color: white;;
+            
+        }
+    }
     
-    .lotus{
+    main p .sigla{
+        display: inline-block;
+        animation-name: move-sigla;
+        animation-duration: 2s;
+        animation-direction: normal;
+        animation-delay:2.3s;
+        animation-fill-mode: forwards;
+        transform: translate(403px, 0);
+        color: #1EF2A6
+        
+    
+    }
+
+    main p .em{
+        display: inline-block;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-direction: normal;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        transform: translate(-40px,0);
+        opacity: 0;
+    }
+
+    main .lotus{
         margin: auto;
         display: block;
         width: 100%;
+        height: 100px;
         margin-top: -50px;
+        padding-right:28px;
+        margin-bottom: 45px;
+        
         
     }
     
@@ -3229,7 +3688,8 @@ footer .allicons{
         text-decoration: none;
         display: inline-flex;
         justify-content: space-around;
-        background: linear-gradient(125deg, rgb(253, 177, 54)20%, rgb(255, 255, 255));
+        
+        background: linear-gradient(125deg, rgb(90, 18, 255)30%,#AA11FF);
         padding: 5px;
         border-radius: 8px;
         color: white;
@@ -3296,7 +3756,7 @@ footer .allicons{
         display: inline-flex;
         flex-direction: column;
         height: 500px;
-        background-color: rgb(253, 177, 54);
+        background:linear-gradient(#5A12FF, #BC10FE) ;
         color: white;
         text-shadow: 1px 1px 1px black;
         width: 100%;
@@ -3331,7 +3791,7 @@ footer .allicons{
         width: 60%;
         font-size: 1.2em;
         font-family: Montserrat, sans-serif;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         text-shadow: 1px 1px 1px rgba(129, 129, 129, 0.438);
         
     }
@@ -3349,20 +3809,25 @@ footer .allicons{
     aside{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        background:linear-gradient(#BC10FE,rgb(88, 17, 255,0) ) ;
+        height: auto;
+        
         
     }
     
     aside .title{
         font-family: Baumans, sans-serif;
-        color: rgb(255, 0, 179);
+        color: white;
         font-size: 3.1em;
         margin-top: 50px;
-        margin-left: -200px;
-        width: 1000px;
+        
+        
     }
     
     aside .contents{    
-        width: 100%;
+        width: 50%;
         margin: auto;
     }
     
@@ -3378,7 +3843,7 @@ footer .allicons{
     
 
 .content1 #delivery1, .content1 #delivery2, .content2 #blink2, .content2 #blink1, .content3 #neck1, .content3 #neck2{
-    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.4));
 
 }
 
@@ -3411,6 +3876,7 @@ footer .allicons{
 
 .content2:hover #blink1{
     display: inline-block;
+    margin-left: -23px;
 }
 
 .content3 #neck2{
@@ -3513,7 +3979,7 @@ footer .allicons{
         margin-top: 180px;
         display: flex;
         flex-direction: column;
-        height: 800px;
+        height: 300px;
         background-color: rgb(248, 248, 248);
         margin-bottom: 50px;
         box-shadow: 1px 1px 20px black;
@@ -3546,18 +4012,14 @@ footer .allicons{
         
     }
     
-    .menor{
-        display: inline-flex;
-        margin-bottom: -120px;
-    }
     
     .gallery .itens img:hover{
         background: rgb(0, 0, 0);
     }
 
     .gallery .itens img{
-        width: 450px;
-        height: 400px;
+        width: 100%;
+        height: 330px;
         opacity: 1; 
         cursor: pointer;
     }
@@ -3604,32 +4066,55 @@ footer .allicons{
         text-align: center;
         color: black;
         text-shadow: 1px 1px 1px rgba(126, 126, 126, 0.212);
-        
+       
         margin-top: 20px;
         width: 100%;
         
     }
-
-    div .testmonials .test-images{
-        width: 70px;
-        height: 70px;
-        margin-top: 20px;
-        margin-bottom: 5px;
-        border-radius: 70px;
-        cursor: pointer;
-        filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
-    }
     
-    .test-images-rating{
-        margin-top: -30px;
-        width: 20px;
-        height: 20px;
+    .item{
+        margin: auto;
+        width: 200px;
+        
         
     }
 
-    .test-frase{
-        margin-top: -25px;
-        margin-bottom: 50px;
+    div .testmonials .test-images{
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        border-radius: 100px;
+        cursor: pointer;
+        filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
+       
+        
+    }
+    
+    .testimonies-Container p{
+        font-size: 1.4em;
+        width: 100%;
+    }
+
+    .star{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top:40px ;
+        margin-bottom: 30px;
+        
+    }
+
+    .star img{
+        width: 30px;
+        height: 30px;
+        filter: drop-shadow(1px 1px 5px rgb(236, 214, 11));
+    }
+
+    .testimonies-Container .test-frase{
+        display: block;
+        margin-left: -70px;
+        font-size: 2em;
+        width: 180%;
     }
     
     h2, h1{
@@ -3650,12 +4135,20 @@ footer .allicons{
     /*Rodapé*/
     
     footer{
-        color: black;
+        color: rgb(255, 255, 255);
         text-align: center;
         margin: auto;
-        width: 90%;   
+        width: 100%;   
         font-family: Montserrat, sans-serif;
-        margin-top: 600px;
+        margin-top: 100px;
+        background-image: url(/imagens/fundo4.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        margin-bottom: -5px;
+        padding-top:40px ;
+        
+        
     }
     
     footer .logofooter{
@@ -3674,6 +4167,7 @@ footer .allicons{
         margin: auto;
         display: flex;
         justify-content: space-around;
+        
     }
 
     #icon2{
