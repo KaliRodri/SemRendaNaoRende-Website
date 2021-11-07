@@ -20,60 +20,75 @@
 </head>
 <body>
     <header>
-        
+        <!--Menu Xl-->
+        <div class="logo" >
+          <a href="index.html"><img src="/imagens/Design_sem_nome_1_-removebg-preview.svg" alt="" width="220px" height="260px"></a>
+        </div>
         <ul class="menu1" id="who-Are">
-            <li><a href="">Quem Somos</a></li>
+            <li><a href="">Quem Somos</a><div class="border"></div></li>
         </ul>  
         <ul class="menu1">
-            <li><a href="">Sobre</a></li>
+            <li><a href="Sobre.html">Sobre</a><div class="border"></div></li>
         </ul>    
         <ul class="menu1" id="products">
-            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="produtos.html">Produtos</a><div class="border"></div></li>
         </ul>
-        
-        <div class="logo" >
-            <a href="index.html"><img src="/imagens/Design_sem_nome_1_-removebg-preview.svg" alt="" width="220px" height="260px"></a>
-        </div>
 
         <ul class="menu2" id="contact">
-            <li><a href="">Contato</a></li>
+            <li><a href="">Contato</a><div class="border"></div></li>
         </ul>  
         <ul class="menu2">
-            <li><a href="">Pedido</a></li>
+            <li><a href="">Pedido</a><div class="border"></div></li>
         </ul>   
         <ul class="menu2">
             <li><button class="heartlink" id="heartlink2">Dê seu like<img src="/imagens/heart.svg" width="20px" height="18px" class="heart-icon" id="heart"><img src="/imagens/heartred.svg" width="22px" height="20px" class="heart-icon" id="heart2"></button></li>
         </ul>
-        <div class="dropdown text-end m-0 p-0"  id="menu-sm">
-            <button class="btn bg-transparent dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-             <img src="/imagens/Barra.svg" alt="" width="40px" height="44.5px"> 
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <li><button class="dropdown-item m-1" type="button"><a href="#">Quem Somos</a></button></li>
-              <li><button class="dropdown-item m-1" type="button"><a href="produtos.html">Produtos</a></button></li>
-              <li><button class="dropdown-item m-1" type="button"><a href="#"><a href="#">Entre em Contato</a></a></button></li>
-              <li><button class="dropdown-item m-1" type="button"><a href="#"><a href="#"><a href="#">Facebook</a></a></a></button></li>
-              <li><button class="dropdown-item m-1" type="button"><a href="#"><a href="#"><a href="#">Whatsapp</a></a></a></button></li>
-              <li><button class="dropdown-item m-1" type="button"><a href="#"><a href="#"><a href="#">Maps</a></a></a></button></li>
-            </ul>
-        </div>     
+        <!--Fim do Menu Xl-->
+
+        <!--Menu SM-->
+        <button class="btn btn-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="menu-ssm"><img src="/imagens/Barra.svg" alt=""></button>
+
+       <div class="offcanvas offcanvas-end w-50 " tabindex="-1" id="offcanvasRight" data-bs-scroll="true" data-bs-backdrop="false" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+         
+         <ul>
+          <h3 id="offcanvasRightLabel">Menu</h3>
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="#">Entre em Contato</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Whatsapp</a></li>
+          <li><a href="#">Maps</a></li>
+        </ul>
+         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+       <div class="offcanvas-body">
+        ...
+       </div>
+      </div>
+        <!-- Fim do Menu SM-->     
     </header>
    <section>
+
+    <!--Apresentação-->
     <div class="container">
         <main>
           <img src="/imagens/Lotus5.svg" alt="" width="120px" height="120px" class="lotus">
-            <p class="welcome">Sem Renda Não Rende</p>
+            <p class="welcome"><span class="sigla">$</span><span class="em">em Renda Não Rende</span></p>
             
             <!--Linha Divisória-->
             <img src="/imagens/Barra2.svg" alt="" class="line">
 
             <p class="welcome-Text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid temporibus quia atque beatae? Quo, accusamus laudantium pariatur, quis praesentium fuga et nemo dolorem deserunt in incidunt nam.</p>
-            <a href="#mid-content" class="buttonVeja">Veja Mais<img src="/imagens/Arrow1.svg" alt="" width="22px" height="30px" class="arrow"><img src="/imagens/Arrow2.svg" alt="" width="22px" height="30px" class="arrow2"></a>
+            <a href="#mid-content" class="buttonVeja">Veja Mais<img src="/imagens/Arrow1.svg" alt="" width="22px" height="30px" class="arrow"></a>
             
             
         </main>
     </div>
+    <!-- Fim da Apresentação-->
     </section>  
+
+    <!--Conteudo 1-->
     <div class="mid-content" id="mid-content">
         <p class="mid-title">Confecção de artes Artesanais</p>
       <div class="img-content">
@@ -82,7 +97,10 @@
         <img src="imagens/necklace-svgrepo-com.svg" height="120px" class="colar">
       </div>
         <p class="mid-title-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta qui nobis eum sapiente cum. Laborum temporibus delectus aliquid consequatur! Placeat, quo deserunt! Molestiae cupiditate iure temporibus! Maxime, praesentium sunt. Dolorem.</p>
-    </div>    
+    </div>
+    <!--Fim do Conteudo 1-->
+
+      <!--Conteudo 2-->
         <aside>
           <div class="titlebox">
             <p class="title">Conheça Nossas Principais Características</p>
@@ -96,7 +114,7 @@
 
            <div class="content2">
             <img src="/imagens/blink.svg" alt="" width="165px" height="180px" id="blink1" loading="lazy"><img src="/imagens/blinkno.svg" alt="" width="185px" height="180px" id="blink2" loading="lazy">
-            <div class="title2">Feitas para Você</div>
+            <div class="title2">Feitos para Você</div>
             <p class="title2-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse assumenda nostrum totam adipisci, excepturi cumque magnam at ex exercitationem numquam, quae, dicta labore accusamus necessitatibus amet praesentium soluta fuga fugit?</p>
            </div> 
 
@@ -106,28 +124,17 @@
             <p class="title3-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse assumenda nostrum totam adipisci, excepturi cumque magnam at ex exercitationem numquam, quae, dicta labore accusamus necessitatibus amet praesentium soluta fuga fugit?</p> 
           </div> 
          </div> 
-           
         </aside>
+      <!-- Fim do Conteudo 2-->
 
+  <!--Portfolio-->
     <div class="instagram">
-        <div class="maior">
-         <div class="gallery">
-            <div class="itens"><img src="/imagens/image1.jpg" alt="" class="box-film"><p class="gallery-text">TÍTULO DESCRITIVO<br><br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum quia voluptas fugit facilis. Eius facere, similique porro iusto eos, fugit corrupti placeat alias sapiente deserunt sint, molestiae tenetur incidunt.
-                </p></div>
-         </div> 
-         <div class="gallery">
-            <div class="itens"><img src="/imagens/imag5.jpg" alt="" class="box-film"><p class="gallery-text">TÍTULO DESCRITIVO<br><br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum quia voluptas fugit facilis. Eius facere, similique porro iusto eos, fugit corrupti placeat alias sapiente deserunt sint, molestiae tenetur incidunt.
-                </p></div>
-         </div>    
-         <div class="gallery" id="gallert-sm1"> 
+        <div class="menor">
+          <div class="gallery" id="gallert-sm1"> 
             <div class="itens"><img src="/imagens/image3.jpg" alt="" class="box-film"><p class="gallery-text">TÍTULO DESCRITIVO<br><br>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum quia voluptas fugit facilis. Eius facere, similique porro iusto eos, fugit corrupti placeat alias sapiente deserunt sint, molestiae tenetur incidunt.
                 </p></div>
          </div> 
-        </div> 
-        <div class="menor">
         <div class="gallery">
            <div class="itens"><img src="/imagens/image4.jpg" alt="" class="box-film"><p class="gallery-text">TÍTULO DESCRITIVO<br><br>
            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum quia voluptas fugit facilis. Eius facere, similique porro iusto eos, fugit corrupti placeat alias sapiente deserunt sint, molestiae tenetur incidunt.
@@ -144,6 +151,9 @@
             </p></div>
         </div> 
        </div>
+       <!--Fim do Portfolio-->
+
+     <!--Potfolio SM-->
        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -198,44 +208,58 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+    <!--Fim do Conteudo 3 SM-->
+
+    <!--Testmonials-->
        <h1>O Que Estão Falando de Nós:</h1>
         <div class="testmonials">
-            <div class="testimonies-Container">
-             <img src="/imagens/test1.jpg" alt="" class="test-images">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+             <div class="testimonies-Container">
+             <img src="/imagens/test1.jpg" alt="" class="test-images" width="100px" height="100px">
              <p>@Ana_LisBela</p>
-             <p><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"></p>
+             <p><div class="star"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"></div></p>
              <p class="test-frase">"Lindos! Amei o colar com meu nome"</p>
             </div>
-            <div>
-                <img src="/imagens/test3.jpg" alt="" class="test-images"> 
-                <p>@Eduardo_16</p>
-                <p><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-half.svg" alt="" class="test-images-rating"></p>
-                <p class="test-frase">"Gratidão pelo serviço atencioso e entrega rápida"</p>
-            </div>
-            <div>
-                <img src="/imagens/test2.jpg" alt="" class="test-images"> 
-                <p>@Monica_Leao</p>
-                <p><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-half.svg" alt="" class="test-images-rating"></p>
-                <p class="test-frase">"Super de qualidade, adorei"</p>
-            </div>
-            <div>
-                <img src="/imagens/person1.jpg" alt="" class="test-images"> 
-                <p>@Fred_Evandro</p>
-                <p><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-half.svg" alt="" class="test-images-rating"></p>
-                <p class="test-frase">"Lindos e exclusivos, não acho igual"</p>
-            </div>      
-         </div> 
-       <h2>Curtiu? Entre em contato por uma de nossas redes sociais:</h2>
-    </div>    
+          </div>
+          <div class="item">
+            <div class="testimonies-Container">
+            <img src="/imagens/test3.jpg" alt="" class="test-images" width="100px" height="100px">
+            <p>@Eduardo_16</p>
+            <p><div class="star"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-half.svg" alt="" class="test-images-rating"></div></p>
+            <p class="test-frase">"Gratidão pelo serviço atencioso e entrega rápida"</p>
+           </div>
+         </div>
+         <div class="item">
+          <div class="testimonies-Container">
+          <img src="/imagens/test2.jpg" alt="" class="test-images" width="100px" height="100px">
+          <p>@Ana_LisBela</p>
+          <p><div class="star"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-half.svg" alt="" class="test-images-rating"></div></p>
+          <p class="test-frase">"Super de qualidade, adorei"</p>
+         </div>
+        </div>
+         <div class="item">
+          <div class="testimonies-Container">
+          <img src="/imagens/person1.jpg" alt="" class="test-images" width="100px" height="100px">
+          <p>@Fred_Evandro</p>
+          <p><div class="star"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-filled.svg" alt="" class="test-images-rating"><img src="/imagens/carbon_star-half.svg" alt="" class="test-images-rating"></div></p>
+          <p class="test-frase">"Lindos e exclusivos, não acho igual"</p>
+         </div>
+        </div>      
+      </div>
+    </div>   
+    <h2>Curtiu? Entre em contato por uma de nossas redes sociais:</h2> 
+    <!-- Fim dos Testmonials-->
             
-   
+   <!--Rodapé-->
     <footer>
         <!--logo-->
        <div class="footerlogo">
         <!--Icons-->
        <div class="allicons">
         <div class="face">
-         <img src="/imagens/Facebook.svg" class="icon" id="icon1" loading="lazy"><p>ianRodrigoFace</p>
+         <img src="/imagens/facebookBranco.svg" class="icon" id="icon1" loading="lazy"><p>ianRodrigoFace</p>
         </div> 
         <div class="whats">
          <img src="/imagens/whatsapp.svg" class="icon" id="icon3" loading="lazy"><p>(75) 9 9851-5887</p>
@@ -244,20 +268,39 @@
             <img src="/imagens/Instagram.svg" class="icon" id="icon2" loading="lazy"><p>@semrendanaorende</p>
            </div>
         <div class="maps">
-         <img src="/imagens/logos_google-maps.svg" class="icon" id="icon4" loading="lazy"><p>Alagoinhas - Ba</p>
+         <img src="/imagens/messenger.svg" class="icon" id="icon4" loading="lazy"><p>Alagoinhas - Ba</p>
         </div>
        </div>
         
         <!--Linha Divisória-->
         <img src="/imagens/Rectangle 21.png" alt="" class="logofooter" width="380px" loading="lazy">
-        <img src="/imagens/logo8.svg" alt="" width="60px" height="60px" loading="lazy">
+        <img src="/imagens/logo7.svg" alt="" width="60px" height="60px" loading="lazy">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore molestias velit recusandae? Delectus voluptatem, incidunt animi necessitatibus consequatur iusto voluptate possimus impedit iure a maiores minus, molestias nam veniam vero!</p>
         <p>@ 2021 SemRendaNaoRende. Todos os direitos reservados.</p>
        </div>  
     </footer>
-    <a href="https://www.instagram.com/direct/inbox/?hl=pt-br" class="float" target="_blank">
-        <img src="/imagens/instagram-float.svg" class="icon" id="icon2" loading="lazy" width="50px" height="70px">
-    </a>
+  <!--Fim do Rodapé-->
+
+  <!--Botão FLutuante SM-->
+  <div class="float-button">
+   <a class="float" id="menu-share">
+    <img src="/imagens/Contact.svg">
+   </a>
+   <ul>
+    <li><a href="#" class="face">
+     <img src="/imagens/Facebook2.svg">
+    </a></li>
+    <li><a href="#" class="insta">
+      <img src="/imagens/instagram2.svg">
+    </a></li>
+    <li><a href="#" class="whats">
+      <img src="/imagens/whatsapp2.svg">
+    </a></li>
+    </ul>
+  </div>
+  <!--Botão FLutuante SM-->
+
+  
 
 
     <!--JavaScript-->
@@ -272,7 +315,7 @@
     <!--SweerAlert Js-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--Bootstrap Js-->
-
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="/Bootstrap5/js/bootstrap.min.js"></script>
