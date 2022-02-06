@@ -1,3 +1,10 @@
 # SemRendaNaoRende-Website
-Website created for the presentation of a crafts and manufactured accessories store.
-Created with Html, Css3, Bootstrap 5 and Jquery
+
+Website created for the presentation of the Sem Renda Não Rende store in the city.
+Still in development. Can be acessed here: https://kalirodri.github.io/SemRendaNaoRende-Website/
+Created with Html, Css3, Bootstrap 5 and Jquery.
+
+Pt br:
+Site criado para a apresentação da loja Sem Renda Não Rende da cidade.
+Ainda em desenvolvimento. Pode ser acessado aqui: https://kalirodri.github.io/SemRendaNaoRende-Website/
+Criado com Html, Css3, Bootstrap 5 e Jquery.
