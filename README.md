@@ -1,7 +1,7 @@
 # SemRendaNaoRende-Website
 
 Website created for the presentation of the Sem Renda Não Rende store in the city.
-Still in development. Can be acessed here: https://kalirodri.github.io/SemRendaNaoRende-Website/
+Still in development. Can be accessed here: https://kalirodri.github.io/SemRendaNaoRende-Website/
 Created with Html, Css3, Bootstrap 5 and Jquery.
 
 # SemRendaNaoRende-Website
